@@ -1,35 +1,33 @@
 <template>
   <Layout>
-    <div class="sidenav">
-   <g-link to="/genre1/">new stuff</g-link>
-  <g-link to="/genre1/">afro</g-link>
-  <g-link to="/genre1/">boogie</g-link>
-  <g-link to="/genre1/">esoteric</g-link>
-  <g-link to="/genre1/">pop music</g-link>
-</div>
-<div class="flex_container" style= "margin-top:5em;margin-left:12em;">
-  <div class="flex_item_left">
-    <g-image src="~/static/Images/hrb7.jpg" width="450;"/>
-      <div class="h2" style= "text-align:right;">sample #1</div>
-      <div class="h2" style= "text-align:right;">sample #2</div>
-      <div class="h2" style= "text-align:right;">sample #3</div>
-  </div>
-  <div class="flex_item_right">
-     <h2>Stand up for your rights LP </br>
+  
+  <div class="container">
+  <div class="left">
+    <div class="item item1"><g-image src="~/static/Images/hrb7.jpg"/></div>
+    <div class="item item3" style="margin-bottom: 0.33em;">
+      <h3>sample #1</h3>
+      <h3>sample #2</h3>
+      <h3>sample #3</h3></div>
+      
+    <div class="item item5"></div>
+  </div><div class="right">
+    <div class="item item2"> <h2>Stand up for your rights LP </br>
      Feel it </br>
      Guavo editionz </br>
      South africa '89 </br>
      Vinyl vg+ sleeve vg </br>
-
-
-
-     </h2>
-       <p>pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poignant but solemn manner.[1] <br>Ballads are generally melodic enough to get the listener's attention.[2] ant but solemn manner.[1] Ballads are generally melodic enough to get the listener's attention.[2]</p>
-       <h2><mark>Add to cart</mark></h2>
-       <h2><mark>Return to shop</mark></h2>
-
+    </h2></div>
+    <div class="item item4"> <p>A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness. </br>
+    <br>Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion.. </br> 
+    <br>Usually in a poignant but solemn manner. <br>Ballads are generally melodic enough to get the listener's attention but solemn manner. Ballads are generally melodic enough to get the listener's attention.</p></div>
+    <div class="item item6"><div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div></div>
   </div>
-  </div>
+</div>
+	
 
   </Layout>
 </template>
@@ -37,35 +35,75 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hot request'
+    title: 'Home'
   }
 }
+for(let e of document.getElementsByClassName('item')) {
+  e.style.minHeight = Math.floor(25 + Math.random() * 72) + 'px';
+}
 </script>
+<style scoped>
 
-<style>
 
-.h2 {
-  font-family: "elmo";
-  font-size: 2.5vw;
-  text-align: right;
-  line-height: 3vw;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.home-links a {
-  margin-right: 1rem;
+p {
+  margin: 0 0 0 0;
 }
-.flex_container {
+
+
+
+.container {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width:100%;
+  padding-top: 5em;
+  margin-left: 12vw;
+
 }
-.flex_item_left {
-  width: 400px;
-  background: none;
+.item {
+  margin-bottom: 0em;
+  text-align: left;
+  background:none;
+  padding: 0em;
 }
-.flex_item_right {
-  flex: 1;
-  background: none;
-  padding-left:6em;
+.left, .right{
+  display: contents;
+}
+.item1, .item2{
+  order: 1;
+}
+.item3, .item4{
+  order: 2;
+}
+.item5, .item6{
+  order: 3;
+}
+
+
+@media (min-width: 36em){
+  .left, .right{
+    display: inline-block;
+    vertical-align: top;
+  }
   
+  .container{
+    display: block;
+  }
+  .left{
+    width: calc(67% - 0.5em);
+    padding-right: 3em;
+    max-width:450px;
+    min-width: 280px;
+
+  }
+  .right{
+    width: 27%;
+    max-width:600px;
+  }
 }
+
 </style>

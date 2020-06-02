@@ -1,21 +1,28 @@
 <template>
 
-  <div class="layout" style= "margin-top:1.25em; margin-left:1.25em; margin-right:1.25em; width: 100%;">
+  <div class="layout">
     <header>
 <div class="navbar">
   <g-link class="logo" to="/">Hot request</g-link>
-  <g-link to="/product/">instagram</g-link>
-  <g-link to="/product/">blog</g-link>
-  <div class="wrap">
-   <div class="search" style="float: none;">
-      <input type="text" class="searchTerm" placeholder="search">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-     </button></div>
-   </div>
+  <g-link to="/product/"><h2>search</h2></g-link>
+  <g-link to="/product/"><h2>cart</h2></g-link>
 </div>
 
     </header>
+      <div class="sidenav">
+  <g-link to="/genre/">new stuff</g-link>
+  <g-link to="/genre/">afro</g-link>
+  <g-link to="/genre/">boogie</g-link>
+  <g-link to="/genre/">esoteric</g-link>
+  <g-link to="/genre/">pop music</g-link>
+  <g-link to="/genre/">reggae</g-link>
+  <g-link to="/genre/">tropical</g-link>
+      <div class="sidenav">
+        <g-link to="/genre/">contact</g-link>
+        <g-link to="/genre/">blog</g-link>
+        <g-link to="/genre/">instagram</g-link></div>
+        </div>
+    
     <slot/>
   </div>
 </template>
@@ -28,11 +35,15 @@ query {
 }
 </static-query>
 
+
+
+
+
 <style>
 body {
   font-family: "Elmo";
   margin:0;
-  padding:0;
+  padding-right:3vw;
   line-height: 1.;
   width: 100%;
 }
@@ -47,29 +58,42 @@ body {
   font-size: 1.5vw;
 }
 
-.h2 {
+h2 {
   font-family: "elmo";
-  font-size: 2.5vw;
+  font-size: 1.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  font-family: "elmo";
+  text-align: right;
+  font-size: 1.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 .logo {
   font-family: "medi";
-  font-size:  2em;
-  letter-spacing: -0.045em; 
+  font-size:  2.66em;
+  letter-spacing: -0.05em;
+  color: black;
   }
 
 .layout {
-  max-width: 1080px;
+  max-width: 100%;
   margin-right: 0em;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-left: 0px;
+  padding-right: 9vw;
+  }
 
 .nav__link {
   margin-left: 0px;
   text-decoration: none;
   color: black;
 }
+
+
 
 @font-face {
     font-family: 'Elmo';
@@ -90,18 +114,19 @@ body {
 
 .navbar {
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 1em; /* Position the navbar at the top of the page */
+  position: fixed; 
+  margin-top: 1em; /* Position the navbar at the top of the page */
+  margin-left:2vw;
   width: 100%; /* Full width */
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: black;
   text-align: center;
-  padding: 0px 16px;
+  margin-right: 2vw;
   text-decoration: none;
+  color: black;
 }
 
 /* Change background on mouse-over */
@@ -118,16 +143,23 @@ body {
   width: 9em;
   position: fixed;
   z-index: 1;
-  background: none;
+  background:chartreuse;
+  
+
   overflow-x: hidden;
   color: black;
-  margin-right: 333px
+  margin-left: 2vw;
+  margin-top: 5em;
+  
 }
 
 .sidenav a {
   text-decoration: none;
   font-size: 1.5em;
+  color: black;
   display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 
 .sidenav a:hover {
@@ -135,7 +167,6 @@ body {
 }
 
 .main {
-  margin-left: 140px;
   font-size: 2em;
 }
 .topnav input[type=text] {
@@ -144,7 +175,6 @@ body {
   border: none;
   margin-top: 8px;
   margin-right: 16px;
-  font-size: 17px;
 }
 
 

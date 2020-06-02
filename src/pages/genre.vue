@@ -1,25 +1,9 @@
 <template>
   <Layout>
-      <div class="sidenav" style="margin-top:3.79em; margin-left:1em;">
-  <g-link to="/genre1/">new stuff</g-link>
-  <g-link to="/genre1/">afro</g-link>
-  <g-link to="/genre1/">boogie</g-link>
-  <g-link to="/genre1/">esoteric</g-link>
-  <g-link to="/genre1/">pop music</g-link>
-  	<div class="collection-sort" style="margin-top:2em">
-				<label><h1>Sort by</h1></label>
-				<select>
-		      <option value="/">price</option>
-		      <option value="/">date</option>
-		      <option value="/">sale</option>
-		    </select>
-			</div>
-		</div>
-  </div>
-    <nav class="product-filter" style="margin-left:35em;">
+    <nav class="product-filter">
 	</nav>
 	
-	<section class="products" style= "margin-left:12em; margin-top: 2.5em;">
+	<section class="products">
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
@@ -174,7 +158,7 @@ time,mark,audio,video{
     font:inherit;
     vertical-align:baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section{
     display:block;
@@ -206,36 +190,15 @@ table{
     border-spacing:0;
 }
 
-/*------------------------------------*\
-    $MAIN
-\*------------------------------------*/
 
-@font-face {
-    font-family: 'Elmo';
-    src: url('../static/elmer-webfont.woff') format('woff'), /* Modern Browsers */
-         url('../static/elmer-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;}
 
-/* Typography */
 
-h1 {
-  font-family: "elmo";
-  font-size:  1.5em;
-}
 
-h3 {
-  font-family: "elmo";
-  font-size: 1em;
-  line-height: 1em;
-}
 
 /* Product Layout */
 
 .product-filter {
 	display: flex;
-	padding: 0px 0;
 }
 
 .sort {
@@ -249,12 +212,11 @@ h3 {
 }
 
 .collection-sort:first-child {
-	padding-right: 20px;
+	padding-right: 0px;
 }
 
 label {
 	color: black;
-  font-family: "elmo";
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 2em;
@@ -263,12 +225,15 @@ label {
 .products {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top:5em;
+	margin-left:12vw;
 }
 
 .product-card {
 	display: flex;
 	flex-direction: column;
-	padding: 1em;
+	margin-right: 1vw;
+	margin-bottom: 1vw;
 	flex: 1 48%;
 	
 	background-color: none;
@@ -284,7 +249,7 @@ label {
 	text-align: right;
 }
 
-@media ( max-width: 750px ) {
+@media ( max-width: 960px ) {
 	
 	.product-card {
 		flex: 1 100%;
@@ -300,12 +265,14 @@ label {
 @media ( max-width: 600px ) {
 	
 	.product-card {
-		flex: 1 100%;
+		flex: 30 %;
+		min-height: 300px;
+		min-width: 300px;
 	}
 	
 }
 
-@media ( max-width: 600px ) {
+@media ( max-width: 900px ) {
 	
 	h1 {
 		margin-bottom: 0;
@@ -320,56 +287,5 @@ label {
 	}
 	
 }
-
-
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-
-.sidenav {
-  width: 9em;
-  position: fixed;
-  z-index: 1;
-  background: none;
-  overflow-x: hidden;
-  color: black;
-  margin-right: 333px
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 1.5em;
-  line-height: 1em;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: red;
-}
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 2em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </style>
