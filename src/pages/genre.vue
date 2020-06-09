@@ -2,48 +2,71 @@
   <Layout>
     <nav class="product-filter">
 	</nav>
-	
 	<section class="products">
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb2.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/b10.jpg" width="450em;" height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Stand up for your rights LP</h3>
-				<h3>Feel it</h3>
+				<p>"Stand up for your rights" LP</p>
+				<p>Feel it</p>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb6.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/b26.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Walk in the park 12"</h3>
-				<h3>Eros</h3>
+				<p>Walk in the park 12"</p>
+				<p>Eros</p>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb3.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/b19.jpg" width=450em; height="450em;"/>
+    </g-link>
+			</div>
+	<div class="product-info">
+				<p>Walk in the park 12"</p>
+				<p>Eros</p>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				 <g-link to="/product/">
+    <g-image src="~/static/Images/b11.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Light tanning LP</h3>
+				<h3>"Light tanning" LP</h3>
 				<h3>Sun tan club</h3>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
+				 <g-link to="/product/">
+    <g-image src="~/static/Images/hrb18.jpg" width=450em; height="450em;"/>
+    </g-link>
+			</div>
+			<div class="product-info">
+				<h3>"Sex total" EP</h3>
+				<h3>Various artists</h3>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb12.jpg" width="450em;"/>
+    <g-image src="~/static/Images/b14.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -59,7 +82,7 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Coco rico LP</h3>
+				<h3>"Coco rico" LP</h3>
 				<h3>Cool aid</h3>
 			</div>
 		</div>
@@ -67,11 +90,11 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb9.jpg" width="450em;"/>
+    <g-image src="~/static/Images/hrb20.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Bohobe spirits music LP</h3>
+				<h3>"Bohobe spirits music" LP</h3>
 				<h3>Norberto de noah</h3>
 			</div>
 		</div>
@@ -91,11 +114,11 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb10.jpg" width="450em;"/>
+    <g-image src="~/static/Images/hrb16.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Fight for your rights LP</h3>
+				<h3>"Fight for your rights" LP</h3>
 				<h3>Feel it</h3>
 			</div>
 		</div>
@@ -107,7 +130,7 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Sick sick sick EP</h3>
+				<h3>"Sick sicc" EP</h3>
 				<h3>Sex total</h3>
 			</div>
 		</div>
@@ -131,10 +154,11 @@
 <script>
 export default {
   metaInfo: {
-    title: 'New stuff'
+    title: 'Genre'
   }
 }
 </script>
+
 <style scoped>
 
 
@@ -193,8 +217,6 @@ table{
 
 
 
-
-
 /* Product Layout */
 
 .product-filter {
@@ -216,27 +238,26 @@ table{
 }
 
 label {
-	color: black;
-	font-size: 1em;
-	font-weight: 500;
-	line-height: 2em;
+	color: orange;
 }
 
 .products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top:5em;
-	margin-left:12vw;
+	margin-top:5.67em;
+	margin-left:26vw;
+	margin-bottom: 8em;
+	width:66vw;
+	background-color:none;
+	
 }
 
 .product-card {
 	display: flex;
 	flex-direction: column;
-	margin-right: 1vw;
-	margin-bottom: 1vw;
-	flex: 1 48%;
-	
-	background-color: none;
+	flex: 1 30%;
+	padding-left:.5em;
+	padding-right:.5em;
 }
 
 .product-image img {
@@ -245,34 +266,49 @@ label {
 
 .product-info {
 	margin-top: auto;
-	padding-top: .67em;
+	padding-top: .33vw;
+	padding-bottom: .67em;
 	text-align: right;
 }
 
-@media ( max-width: 960px ) {
+@media ( max-width: 48em ) {
 	
 	.product-card {
-		flex: 1 100%;
+		flex: 1 46%;
 	}
 	
 	.products .product-card:first-child, 
 	.products .product-card:nth-child(2) {
-		flex: 2 50%;
+		flex: 2 30%;
 	}
-	
-}
+	.products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5.67em;
+	margin-left:2vw;
+	margin-right:22vw;
+	margin-bottom:8em;
+	width:96vw;
+	background-color:none;
+	}}
 
-@media ( max-width: 600px ) {
+@media ( max-width: 33em ) {
 	
 	.product-card {
-		flex: 30 %;
-		min-height: 300px;
-		min-width: 300px;
+		flex: 2 50%;
+	}
+	.products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: em;
+	margin-left:2vw;
+	width:96vw;
+	flex: 1 36%;
 	}
 	
 }
 
-@media ( max-width: 900px ) {
+@media ( max-width: 1300px ) {
 	
 	h1 {
 		margin-bottom: 0;
