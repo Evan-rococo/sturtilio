@@ -29,9 +29,17 @@
     
     <div class="item item6"><table>
       <tr><td><h3>
-           <g-link to="/">Sample #1</g-link><br>
-            <g-link to="/">Sample #2</g-link><br>
-            <g-link to="/">Sample #3</g-link><br>
+           <audio id="music" preload="true">
+  <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
+			<source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
+	</audio>
+<div id="audioplayer">
+	<button id="pButton" class="play"></button>
+  <div id="timeline">    Sample #1
+  		  <div id="playhead"></div>
+  </div>
+</div><br>
+            
             </h3></td></tr>
       </table>
       
@@ -42,11 +50,13 @@
 </template>
 
 <script>
+
 export default {
   metaInfo: {
     title: 'Product'
   }
 }
+
 </script>
 
 
@@ -215,5 +225,37 @@ p {
   } 
 }
 
+#audioplayer{
+	width: 30vw;
+	height: 2em;
+  float: right;
+  margin-bottom: 1em;
+}
+
+#pButton{
+    height:3.6em; 
+    width: 0px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.play{background: Sample text;}
+.pause{background: Sample text ;}
+
+#timeline{
+	width: 100%;
+	height: 1.34em;
+	background: yellow;
+  
+}
+#playhead{
+	width: 18px;
+	height: 1.34em;
+	border-radius: 0%;
+	background: red;
+
+}
 
 </style>
