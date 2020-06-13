@@ -43,39 +43,42 @@
 
 
 <style>
+
 body {
   font-family: "Elmo";
   margin:0;
   line-height: 1.;
   width: 100%;
   text-decoration: none;
-}
+  }
 
 .h1 {
   font-family: "medi";
   font-size:  2em;
   text-decoration: none;
-}
+  }
 
 .p {
   font-family: "elmo";
   font-size: calc(16px + 1vw);
   line-height: calc(1.1em + 0.5vw);
   text-decoration: none;
-}
+  }
 
 h2 {
   font-family: "elmo";
   font-size: 1.5em;
   line-height: 1.33em;
-  text-decoration: none;}
+  text-decoration: none;
+  }
 
 h3 {
   font-family: "elmo";
   text-align: right;
   font-size: 1.5em;
   line-height: 1.33em;
-  text-decoration: none;}
+  text-decoration: none;
+  }
 
 
 .logo {
@@ -95,7 +98,7 @@ h3 {
   margin-left: 0px;
   text-decoration: none;
   color: black;
-}
+  }
 
 .header {
   overflow: hidden;
@@ -105,8 +108,7 @@ h3 {
   left: 0;
   top: 0;
   background: none;
-  
-}
+  }
 
 .header a {
   float: left;
@@ -114,28 +116,28 @@ h3 {
   text-align: center;
   text-decoration: none;
   margin-left: 3.95vw;
- }
+  }
 
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+  }
 
 .header a.logo {
   font-size: 2.67em;
-}
+  }
 
 .header a:hover {
   background-color:none;
   color: red;
-}
+  }
 
 .header a.active {
   background-color:none;
   color: black;
-}
+  }
 
 .header-right {
   float: right;
@@ -143,23 +145,58 @@ h3 {
   font-size: 2em;
   margin-right: 9vw;
   background-color: none;
-}
+  }
 
 
 @media screen and (max-width: 64em) {
+
+   .left, .right{
+    display: inline-block;
+    vertical-align: top;
+    }
+  
+  .container{
+    display: block;
+    margin-left: 27vw;
+    }
+
+  .left{
+    width: 63%;
+    margin-right: 2em;
+    max-width: 450px;
+    }
+
+  .item1 {
+    opacity: 100%;
+    }
+
+  .item3 {
+    background-color: none;
+    text-decoration: none;
+    }
+
+  
+  .right{
+    width: 33%;
+    background-color: none;
+    } 
+
   .header a {
     background-color: none;
     margin-left: .86vw;
     float: left;
-  }
+    }
+
    .header {
-    background-color:none;} 
+    background-color:none;
+    } 
     
   .header-right {
-  float: fixed;
-  background-color: none;
+    float: fixed;
+    background-color: none;
+  }
 }
-    }
+
 
 @media (max-width: 48em) {
 
@@ -170,52 +207,81 @@ h3 {
     background-color:none;
     margin-right: .5em;
     margin-top:0.1em;
-    }}
+    }
+
   .header {
     float: right;
     display: block;
     position: fixed;
     left: 0;
-    top: 0; }
+    top: 0;
+    }
     
   .header-right {
-  margin-top:0.96em;
-  font-size: 1.5em;
-  position: relative;
-  left: 0;
-  top: 0;
-  background-color:none;
+    margin-top:0.96em;
+    font-size: 1.5em;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color:none;
+  }
 }
 
 @media screen and (max-width: 33em) {
-  .header a {
-    float: right;
-    display: block;
-    text-align: right;
-    mix-blend-mode: difference;
-    background-color: none;
-    margin-right: 3vw;
-    position: relative;
-    left: 0;
-    top: 0;
-  
+  .container {
+    margin-bottom:8em;
+    padding-top: 2em;
+    background: none;
+    }
+
+
+.item {
+  text-align: left;
   }
-   .header {
-    position: relative;
-    left: 0;
-    top: 0;
-    background-color: none;} 
+
+.left, .right{
+  display: contents;
+}
+
+.item1, .item2{
+  order: 1;
+}
+
+.item4, .item6{
+  order: 2;
+}
+
+.item5, .item3{
+  order: 3;
+}
+
+.header a {
+  float: right;
+  display: block;
+  text-align: right;
+  mix-blend-mode: difference;
+  background-color: none;
+  margin-right: 3vw;
+  position: relative;
+  left: 0;
+  top: 0;
+  }
+
+.header {
+  position: relative;
+  left: 0;
+  top: 0;
+} 
     
-  .header-right {
+.header-right {
   float: left;
   margin-left:3em;
   margin-top:-1.5em;
   position: fixed;
-    left: 0;
-    top: 0;
-    background-color: tan;
+  left: 0;
+  top: 0;
+  }
 }
-    }
 
 
 @font-face {
@@ -243,12 +309,7 @@ h3 {
 
 /* Main content */
 .main {
-  margin-top: 0px; /* Add a top margin to avoid content overlay */
-}
-
-body {
-  position: relative;
-}
+  margin-top: 0px;}
 
 .Sidebar {
   position: fixed;
@@ -280,8 +341,74 @@ body {
   }
   .Sidebar.toggled {
     transform: translate3d(0, 0, 0);
+     .left, .right{
+    display: inline-block;
+    vertical-align: top;
   }
+  
+  .container{
+    display: block;
+    margin-left: 23vw;
+  }
+
+  .left{
+    width: 63%;
+    margin-right: 2em;
+    max-width: 42vw;}
+
+  .item1 {
+    opacity: 100%;
+    }
+
+  .item3 {
+    background-color: none;
+    text-decoration: none;
+    }
+
+  
+  .right{
+    width: 36%;
+    background-color: none;
+  } 
+  
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 1.2em;
+  }
+}}
+
+@media (min-width: 48em){
+  .left, .right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .container{
+    display: block;
+    margin-left: 23vw;
+  }
+  .left{
+    width: 63%;
+    margin-right: 2em;
+    max-width: 42vw;}
+
+  .item1 {
+    opacity: 100%;}
+  .item3 {
+    background-color: none;
+    text-decoration: none;}
+
+  
+  .right{
+    width: 36%;
+    background-color: none;
+  } 
 }
+
 @media (max-width: 64em) {
   .Sidebar {
     position: fixed;
@@ -321,18 +448,7 @@ body {
   top: 0;
   width: 100%}
 
-@media screen and (max-width: 48em) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 1.2em;
-  }
-  .topnav input[type=text] {
-  }
-}
+
 
 .marquee {
             height: 2em;
@@ -395,6 +511,55 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+table, td, th {
+  border: 0px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  width: 50%;
+  vertical-align: top;
+  background-color:none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  margin: 0 0 0 0;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6em;
+  margin-left: 26vw;
+  margin-bottom: 8em;
+  background-color:none;}
+
+.left {
+  width: 100%;
+}
+
+.right{
+  width: 37%;}
+
+
+
+  
+
+   
+
+
 
 
 </style>

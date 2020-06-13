@@ -26,31 +26,6 @@ export default {
 
 
 <style scoped>
-table, td, th {
-  border: 0px solid black;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td {
-  width: 50%;
-  vertical-align: top;
-  background-color:none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-p {
-  margin: 0 0 0 0;
-}
-
-
 
 .container {
   display: flex;
@@ -59,24 +34,28 @@ p {
   margin-left: 26vw;
   margin-right: 2em;
   margin-bottom: 8em;
-  background-color:none;}
+  background-color:none;
+  }
 
 .left {
   width: 100%;
-}
+  }
 
 .right{
-  width: 37%;}
+  width: 37%;
+  }
 
 @media (max-width: 33em) {
   .container {
     margin-bottom:8em;
     padding-top: 2em;
-    background:none;}
+    background:none;
+    }
 
   .item3{
     font-size: 1em;
-  }
+    }
+
   .item {
   margin-bottom: 0em;
   text-align: left;
@@ -85,21 +64,22 @@ p {
 
   .left {
     opacity: 66%;
-  }
+    }
 
 .left, .right{
   display: contents;
-}
+  }
 .item1, .item2{
   order: 1;
-}
+  }
 .item4, .item6{
   order: 2;
-}
+  }
 .item5, .item3{
   order: 3;
+  }
 }
-}
+
 @media (max-width: 48em) {
   .container {
     margin-left:5vw;
@@ -109,7 +89,7 @@ p {
     width: 90vw;
     background-color:none;
     }
-}
+  }
 
 .item {
   margin-bottom: 0em;
@@ -124,81 +104,88 @@ p {
 
 .left, .right{
   display: contents;
-}
+  }
 .item1, .item2{
   order: 1;
-}
+  }
 .item4, .item6{
   order: 2;
-}
+  }
 .item5, .item3{
   order: 3;
-}
+  }
 
    
 @media (min-width: 48em){
   .left, .right{
     display: inline-block;
     vertical-align: top;
-  }
+    }
   
   .container{
     display: block;
     margin-left: 22vw;
     background-color: none;
     margin-right: 2em;
-  }
+    }
+
   .left{
     width: 63%;
     margin-right: 2em;
-    max-width: 42vw;}
+    max-width: 42vw;
+    }
 
   .item1 {
-    opacity: 100%;}
+    opacity: 100%;
+    }
+    
   .item3 {
     background-color: none;
-    text-decoration: none;}
+    text-decoration: none;
+    }
 
-  
   .right{
     width: 36%;
     background-color: none;
-  } 
+    } 
 }
 
 @media (min-width: 64em){
   .left, .right{
     display: inline-block;
     vertical-align: top;
-  }
+    }
   
   .container{
     display: block;
     margin-left: 27vw;
     margin-right: 2em;
-    
-  }
+    }
+
   .left{
     width: 63%;
     margin-right: 2em;
-    max-width: 36vw;}
+    max-width: 36vw;
+    }
 
   .item1 {
-    opacity: 100%;}
+    opacity: 100%;
+    }
+
   .item3 {
     background-color: none;
-    text-decoration: none;}
+    text-decoration: none;
+    }
 
-  
   .right{
     width: 33%;
     background-color: none;
-  } 
-}
+    } 
+  }
 
 
 mark {
   background-color: yellow;
   color: black;
-}
+  }
 </style>

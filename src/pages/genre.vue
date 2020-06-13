@@ -162,7 +162,6 @@ export default {
 
 <style scoped>
 
-
 html,body,div,span,applet,object,iframe,
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,acronym,address,big,cite,code,
@@ -215,24 +214,21 @@ table{
     border-spacing:0;
 }
 
-
-
-
 /* Product Layout */
 
 .product-filter {
 	display: flex;
-}
+	}
 
 .sort {
 	display: flex;
 	align-self: flex-end;
-}
+	}
 
 .collection-sort {
- display: flex;
-	flex-direction: column;
-}
+ 	display: flex;
+ 	flex-direction: column;
+ 	}
 
 .collection-sort:first-child {
 	padding-right: 0px;
@@ -275,13 +271,14 @@ label {
 @media ( max-width: 48em ) {
 	
 	.product-card {
-		flex: 1 46%;
+	flex: 1 46%;
 	}
 	
 	.products .product-card:first-child, 
 	.products .product-card:nth-child(2) {
-		flex: 2 30%;
+	flex: 2 30%;
 	}
+
 	.products {
 	display: flex;
 	flex-wrap: wrap;
@@ -291,13 +288,15 @@ label {
 	margin-bottom:8em;
 	width:96vw;
 	background-color:none;
-	}}
+	}
+}
 
 @media ( max-width: 33em ) {
 	
 	.product-card {
 		flex: 2 50%;
 	}
+	
 	.products {
 	display: flex;
 	flex-wrap: wrap;
