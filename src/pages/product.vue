@@ -4,65 +4,70 @@
   <div class="container">
   <div class="left">
     <div class="item item1"><g-image src="~/static/Images/hrb7.jpg"/></div>
-    <div class="item item3">
+    <div class="item item3" style="font-size:1.25em">
       <table><tr>
-    <td><h2><g-link to="/">Conditions</g-link><br>
-            <g-link to="/genre">Return to shop</g-link></h2></td>
-    <td><h3>$13.91<br>
+    <td><g-link to="/">Conditions</g-link><br>
+            <g-link to="/genre">Return to shop</g-link></td>
+    <td style="text-align:right;"><g-link to="/">$13.92</g-link><br>
             <g-link to="/">Add to cart</g-link><br>
-            </h3></td></tr>
+            </td></tr>
 </table>
 </div>
       
     
 </div><div class="right">
-  <div class="item item2"> <h2>"Stand up for your rights" LP<br>
+  <div class="item item2">"Stand up for your rights" LP<br>
      Feel it <br>
      Guavo editionz <br>
      South africa '89 <br>
-     Vinyl vg+ sleeve vg <br></h2>
+     Vinyl vg+ sleeve vg <br>
   </div>
     
-    <div class="item item4"> <p>A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness. </br>
+    <div class="item item4" style="margin-bottom:3.67em;"> <p>A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness. </br>
     <br>Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion.. </br> 
     <br>Usually in a poignant but solemn manner. <br>Ballads are generally melodic enough to get the listener's attention but solemn manner. Ballads are generally melodic enough to get the listener's attention.</p></div>
     
-    <div class="item item6"><table>
-      <tr><td><h3>
-           <audio id="music" preload="true">
-  <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
-			<source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
-	</audio>
-<div id="audioplayer">
-	<button id="pButton" class="play"></button>
-  <div id="timeline">    Sample #1
-  		  <div id="playhead"></div>
-  </div>
-</div><br>
-            
-            </h3></td></tr>
-      </table>
-      
+    <div class="item item6" style="text-align:right;"><table>
+      <tr><td>
+          <audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>
+<a class="btn" id="nyan-btn">Libreville (Rough mix)</a><br>
+
+<audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>
+<a class="btn" id="nyan-btn">Ekweghele</a><br>
+          
+<audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>
+<a class="btn" id="nyan-btn">New Casino</a><br>
+          
+          
+            </td></tr>
+          </table>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-	 </Layout>
+  </Layout>
 </template>
 
 <script>
-
 export default {
+  
   metaInfo: {
-    title: 'Product'
-  }
+    
+    title: 'Product'}
 }
-
 </script>
 
 
 <style scoped>
+
 table, td, th {
   border: 0px solid black;
+  background-color:;
 }
 
 table {
@@ -90,10 +95,11 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 6em;
+  padding-top: 0em;
   margin-left: 26vw;
   margin-bottom: 8em;
-  background-color:none;}
+  background-color:none;
+  }
 
 .left {
   width: 100%;
@@ -102,20 +108,24 @@ p {
 .right{
   width: 37%;}
 
+  .item1 {
+  padding-bottom: 1.67em;
+}
+
 @media (max-width: 33em) {
   .container {
     margin-bottom:8em;
-    padding-top: 2em;
-    background: none;}
+    padding-top: 3.67em;
+    background: none;
+    }
 
-  .item3{
-    font-size: 1em;
-  }
+ 
   .item {
   margin-bottom: 0em;
   text-align: left;
   background:none;
   }
+  
 
   .left {
     opacity: 66%;
@@ -136,12 +146,12 @@ p {
 }
 @media (max-width: 48em) {
   .container {
-    margin-left:4.5vw;
+    margin-left:4vw;
     margin-right:5vw;
     margin-bottom:8em;
-    margin-top: 1em;
-    width: 90vw;
-    background-color: none;
+    margin-top: 7.34em;
+    width: 92vw;
+    background-color:none;
     }
 }
 
@@ -150,6 +160,10 @@ p {
   text-align: left;
   background:none;
   }
+
+.item1 {
+  padding-bottom: 1.67em;
+}
 
 .left {
   opacity: 100%;
@@ -178,22 +192,21 @@ p {
   .container{
     display: block;
     margin-left: 23vw;
+    background-color: none;
+    margin-top: 3.67em;
+    margin-left: 12em;
   }
   .left{
-    width: 63%;
+    width: 60%;
     margin-right: 2em;
     max-width: 42vw;}
 
-  .item1 {
-    opacity: 100%;}
-  .item3 {
-    background-color: none;
-    text-decoration: none;}
+ .item1 {
+  padding-bottom: 0em;
+}
 
-  
   .right{
     width: 36%;
-    background-color: none;
   } 
 }
 
@@ -208,54 +221,30 @@ p {
     margin-left: 27vw;
   }
   .left{
-    width: 63%;
+    width: 60%;
     margin-right: 2em;
     max-width: 450px;}
-
-  .item1 {
-    opacity: 100%;}
-  .item3 {
-    background-color: none;
-    text-decoration: none;}
-
   
   .right{
-    width: 33%;
+    width: 35%;
     background-color: none;
   } 
 }
-
-#audioplayer{
-	width: 30vw;
-	height: 2em;
-  float: right;
-  margin-bottom: 1em;
+.item2 {
+  font-size: 1.67em;
+  margin-bottom: 1.5em;
+}
+.item3 {
+  margin-top:1.34em;
+  line-height: 1.5em;
+  background-color: none;
 }
 
-#pButton{
-    height:3.6em; 
-    width: 0px;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-
-.play{background: Sample text;}
-.pause{background: Sample text ;}
-
-#timeline{
-	width: 100%;
-	height: 1.34em;
-	background: yellow;
-  
-}
-#playhead{
-	width: 18px;
-	height: 1.34em;
-	border-radius: 0%;
-	background: red;
-
-}
-
+.btn{
+   font-size: 1.25em;
+   line-height: 1.5em;
+   cursor:pointer;
+   display:inline-block;
+   text-align: right;
+   }
 </style>

@@ -3,7 +3,7 @@
   
   <div class="container">
   <div class="left">
-    <div class="item item1" style="margin-bottom:1.2em;"><g-link to="/product/">
+    <div class="item item1" style="margin-bottom:1.34em;"><g-link to="/product/">
     <g-image src="~/static/metal.gif"/>
     </g-link></div>
   </div><div class="right">
@@ -30,7 +30,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 6em;
+  padding-top: 3.67em;
   margin-left: 26vw;
   margin-right: 2em;
   margin-bottom: 8em;
@@ -48,7 +48,7 @@ export default {
 @media (max-width: 33em) {
   .container {
     margin-bottom:8em;
-    padding-top: 2em;
+    padding-top: 3.67em;
     background:none;
     }
 
@@ -85,7 +85,7 @@ export default {
     margin-left:5vw;
     margin-right:5em;
     margin-bottom:8em;
-    margin-top: 1em;
+    margin-top: 3.67em;
     width: 90vw;
     background-color:none;
     }
@@ -127,10 +127,11 @@ export default {
     margin-left: 22vw;
     background-color: none;
     margin-right: 2em;
+    margin-left: 12em;
     }
 
   .left{
-    width: 63%;
+    width: 56%;
     margin-right: 2em;
     max-width: 42vw;
     }

@@ -19,7 +19,7 @@
 		<div class="product-card">
 			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/b26.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/s4.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -43,7 +43,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/b11.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/s1.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -241,7 +241,7 @@ label {
 .products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top:5.67em;
+	margin-top:3.67em;
 	margin-left:26vw;
 	margin-bottom: 8em;
 	width:66vw;
@@ -282,9 +282,9 @@ label {
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 5.67em;
-	margin-left:2vw;
-	margin-right:22vw;
+	margin-top: 7.3em;
+	margin-left:1.67vw;
+	margin-right:vw;
 	margin-bottom:8em;
 	width:96vw;
 	background-color:none;
@@ -296,13 +296,13 @@ label {
 	.product-card {
 		flex: 2 50%;
 	}
-	
+
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: em;
-	margin-left:2vw;
-	width:96vw;
+	margin-top: 7.34em;
+	margin-left:1em;
+	width:94vw;
 	flex: 1 36%;
 	}
 	
