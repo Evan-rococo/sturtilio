@@ -17,7 +17,9 @@
             <g-link to="/genre">reggae</g-link><br>
             <br>
             <g-link to="/faq">Faq</g-link><br>
-            <g-link to="/contact">contact</g-link>
+            <g-link to="/contact">contact</g-link><br>
+            <br>
+            <g-link to="/cart">Cart</g-link><br>
             <form class="example" style="font-size:1em;" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -88,6 +90,11 @@ body {
   font-size:  2em;
   }
 
+.h12 {
+  font-family: "tonii";
+  font-size:  1.25em;
+  }
+
 .p {
   font-family: "elmo";
   font-size: calc(16px + 1vw);
@@ -117,9 +124,10 @@ h5 {
   }
 
 .logo {
-  font-family: "medi";
+  font-family: "Tonii-blacc";
   font-size:  2em;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
+  text-shadow: 2px 2px 2px white;
   }
 .layout {
   width: 100%;
@@ -173,7 +181,6 @@ h5 {
 
 .header-right {
   float: right;
-  background-color:none;
   font-size: 2em;
   margin-right: 9vw;
   background-color: none;
@@ -279,15 +286,13 @@ h5 {
   float: right;
   display: block;
   text-align: right;
-  mix-blend-mode: difference;
-  background-color: none;
-  margin-right: 3vw;
+  margin-right: 1.67vw;
   position: relative;
   left: 0;
   top: 0;
   }
 .header {
-  position: relative;
+  position: fixed;
   left: 0;
   top: 0;
 } 
@@ -347,9 +352,9 @@ form.example::after {
     text-rendering: optimizeLegibility;}
 
 @font-face {
-    font-family: 'medi';
-    src: url('../static/GintoNordTrial-Medium.woff') format('woff'), /* Modern Browsers */
-         url('../static/GintoNordTrial-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-family: 'Tonii-blacc';
+    src: url('../static/Tonii-blacc.woff') format('woff'), /* Modern Browsers */
+         url('../static/Tonii-blacc.ttf') format('truetype'); /* Safari, Android, iOS */
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;}
@@ -381,6 +386,16 @@ form.example::after {
   z-index: 2;
 }
 @media (max-width: 48em) {
+
+  .header a {
+  float: right;
+  display: block;
+  text-align: right;
+  margin-right: 1.67vw;
+  position: relative;
+  left: 0;
+  top: 0;
+  }
   .Sidebar {
     transform: translate3d(-100%, 0, 0);
     top: 3em;
@@ -389,7 +404,7 @@ form.example::after {
   .Hamburger {
     opacity: 1;
     margin-left:3vw;
-    top: -1.8em;
+    top: -2.2em;
   }
  
   .Sidebar.open {
@@ -443,6 +458,7 @@ form.example::after {
   background:none;
   text-decoration: black;
 }
+
 
 @media (min-width: 48em){
   
@@ -623,11 +639,12 @@ p {
      .Sidebar {
       background:lime;
       margin-left:-.0em;
+      margin-top: .05em;
       padding-left:.67em;
       padding-top: .67em;
       padding-bottom: .34em;
       padding-right: .34em;
-      height: 11.5em;
+      height: 14em;
       width: 7em;
         }
       }

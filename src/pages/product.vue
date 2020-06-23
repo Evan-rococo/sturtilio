@@ -4,14 +4,30 @@
   <div class="container">
   <div class="left">
     <div class="item item1"><g-image src="~/static/Images/hrb7.jpg"/></div>
-    <div class="item item3" style="font-size:1.25em">
+    <div class="item item3">
       <table><tr>
-    <td><g-link to="/">Conditions</g-link><br>
-            <g-link to="/genre">Return to shop</g-link></td>
-    <td style="text-align:right;"><g-link to="/">$13.92</g-link><br>
-            <g-link to="/">Add to cart</g-link><br>
-            </td></tr>
-</table>
+    <td>
+    <div @click.prevent="toggleClass">
+    <p>Conditions</p>
+       </div> 
+            <g-link to="/genre">Return to shop</g-link>
+            </td>
+    <td style="text-align:right;">
+        <h12 class style="font-family:Tonii; font-size:1.5em;">€13.92</h12><br>
+          <g-link to="/">Add to cart</g-link><br>
+            </td></tr></table>
+
+              <div class="item item5" style="margin-top: .67em;">
+                <div class="Sidebar1" v-bind:class="{ open: isActive}" style="opacity:100%;">
+                <div style="margin=0em; padding-bottom:.34em; font-size:1.34em;">Shipping</div>All shipping is done with PostNord Sverige. Shipping is registered only and <mark><g-link to="/product">trackable right here.</g-link></mark> Packages are shipped Sunday, Wednesday and Friday. Packages will only be sent to an address registered with Paypal. Packages are properly protected and addressed.</br>
+              </div>
+            <div class="Sidebar1" v-bind:class="{ open: isActive}" style="opacity:100%;">
+            <div style="margin=0em; padding-bottom:.34em; font-size:1.34em;">Payment</div>Payments can be made either by Paypal or, in the case of Swedish residents, Swish.
+          </div>
+            <div class="Sidebar1" v-bind:class="{ open: isActive}" style="opacity:100%;">
+            <div style="margin=0em; padding-bottom:.34em; font-size:1.34em;">Combining orders</div>If you are interested in multiple records, please ask about discounts, bonus records, etc. before ordering.</br>
+              </div>
+</div>
 </div>
       
     
@@ -54,12 +70,16 @@
 </template>
 
 <script>
-export default {
-  
-  metaInfo: {
-    
-    title: 'Product'}
-}
+ export default {
+        data: () => ({
+            isActive: false
+        }),
+        methods: {
+           toggleClass: function(event){
+       this.isActive = !this.isActive;
+    }
+        }
+    }
 </script>
 
 
@@ -95,9 +115,9 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 0em;
+  margin-top: 3.67em;
   margin-left: 26vw;
-  margin-bottom: 8em;
+  margin-bottom: 0em;
   background-color:none;
   }
 
@@ -114,7 +134,7 @@ p {
 
 @media (max-width: 33em) {
   .container {
-    margin-bottom:8em;
+    margin-bottom:0em;
     padding-top: 3.67em;
     background: none;
     }
@@ -148,8 +168,8 @@ p {
   .container {
     margin-left:4vw;
     margin-right:5vw;
-    margin-bottom:8em;
-    margin-top: 7.34em;
+    margin-bottom:3.67em;
+    padding-top: 3.67em;
     width: 92vw;
     background-color:none;
     }
@@ -195,6 +215,7 @@ p {
     background-color: none;
     margin-top: 3.67em;
     margin-left: 12em;
+    margin-bottom: 3.67em;
   }
   .left{
     width: 60%;
@@ -236,8 +257,8 @@ p {
 }
 .item3 {
   margin-top:1.34em;
-  line-height: 1.5em;
-  background-color: none;
+  font-size: 1.5em;
+  line-height: 1em;  
 }
 
 .btn{
@@ -247,4 +268,27 @@ p {
    display:inline-block;
    text-align: right;
    }
+
+ .Sidebar1 {
+  background:whitesmoke;
+  font-size: .67em;
+  line-height: 1em;
+  padding:.67em;
+      
+        }
+      
+
+ .Sidebar1 {
+    transform: translate3d(-200%, 0, 0);
+    top: 3em;
+    
+  }
+ 
+  .Sidebar1.open {
+    transform: translate3d(0, 0, 0);
+     .left, .right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  }
 </style>

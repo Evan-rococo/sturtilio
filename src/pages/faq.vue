@@ -4,52 +4,44 @@
   <div class="container">
   <div class="left">
     <div class="item item1">
-      <g-image style="margin-bottom:1em;" src="~/static/Images/b7.jpg"/>
-       <p>UPN placed the series on hiatus on April 30, 2001, due to concerns about its low ratings; only two episodes had aired. Despite the network's claims, media commentators believed it would be removed from air following its poor performance.</p>
+      <h5 style="background-color:yellow; padding:.67em;line-height:1em;">UPN placed the series on hiatus on April 30, 2001, due to concerns about its low ratings; only two episodes had aired. Despite the network's claims, media commentators believed it would be removed from air following its poor performance.</h5>
 </div>
       
-    
 </div><div class="right">
-  <div class="item item2"><section id="accordion">
-			<div>
-				<input type="checkbox" id="check-5" />
-				<label for="check-5">Where do all these records come from?</label>
+    <div class="item item4">
+      <section id="accordion">
+			  <div>
+				<input type="checkbox" id="check-5"/>
+				<label for="check-5" style="padding-bottom:0.67em;">Where do all these records come from?</label>
 				<article>
 					<p>While discussing the cancellation, McCouch felt it was "doomed to fail" from the beginning and referred to UPN as "a loser network at that time" due its treatment of the series. Cosgrove disagreed with McCouch's sentiment and believed the show's lack of success was not tied to the network specifically.</p>
 				</article>
 			</div>
 			<div>
 				<input type="checkbox" id="check-1" />
-				<label for="check-1">What is this place all about?</label>
+				<label for="check-1" style="padding-bottom:0.67em;">What is this place all about?</label>
 				<article>
 					<p>Gillard developed the premise for All Souls from his belief that a medical facility would be an ideal setting for a horror series and his research on statistics of deaths that had taken place in a hospital.</p>
 				</article>
 			</div>
       </section>
 			</div>
-    <div class="item item3">
+    <div class="item item3" style="padding-bottom:0.67em;">
       <section id="accordion">
 			<div>
 				<input type="checkbox" id="check-8" />
-				<label for="check-8">What's with these prices?</label>
+				<label for="check-8" style="padding-bottom:0.67em;">What's with these prices?</label>
 				<article>
 					<p>Reception of the series' pilot was mixed, with television critics divided over its structure.[5][9][25] Rob Owen of The Pittsburgh Post-Gazette gave the first episode a positive review, believing it set up enough story elements to show promise.</p>
 				</article>
 			</div>
 		</section>
 		</section>
-  </div>
-    
-    <div class="item item4" style="margin-bottom:1em;">
 
-
-    </div>
-    
-    <div class="item item6">
         <section id="accordion">
 			<div>
 				<input type="checkbox" id="check-3" />
-				<label for="check-3">How do i pay?</label>
+				<label for="check-3" style="padding-bottom:0.67em;">How do i pay?</label>
 				<article>
 					<p>A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness.
 
@@ -135,7 +127,7 @@ p {
 @media (max-width: 33em) {
   .container {
     margin-bottom:8em;
-    padding-top: 3.67em;
+    padding-top: 0em;
     background: none;
     }
 
@@ -169,7 +161,7 @@ p {
     margin-left:4vw;
     margin-right:5vw;
     margin-bottom:8em;
-    margin-top: 7.34em;
+    margin-top: 5.28em;
     width: 92vw;
     background-color:none;
     }
@@ -188,6 +180,11 @@ p {
 .left {
   opacity: 100%;
   }
+
+.right {
+background-color: none;
+
+}
 
 .left, .right{
   display: contents;
@@ -211,22 +208,21 @@ p {
   
   .container{
     display: block;
+    width: 78vw;
     margin-left: 23vw;
     background-color: none;
-    margin-top: 3.67em;
+    margin-top: 1.67em;
     margin-left: 12em;
   }
   .left{
     width: 60%;
-    margin-right: 2em;
-    max-width: 42vw;}
-
- .item1 {
-  padding-bottom: 0em;
-}
+    margin-right: 1em;
+    padding-top: 0em;
+    }
 
   .right{
     width: 36%;
+    margin-top: 2em;
   } 
 }
 
@@ -239,15 +235,15 @@ p {
   .container{
     display: block;
     margin-left: 27vw;
+    width: 64vw;
   }
   .left{
-    width: 60%;
-    margin-right: 2em;
-    max-width: 450px;}
+     width: 50%;
+    margin-right: 1em;}
   
   .right{
-    width: 35%;
-    background-color: none;
+    width: 46%;
+    margin-right: em;
   } 
 }
 .item2 {
@@ -277,7 +273,8 @@ p {
 	margin-bottom: .0;
 	padding: .1725em 0em;
 	z-index: 20;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  line-height: 1em;
   background:none;
 }
 #accordion label:hover {
@@ -285,11 +282,12 @@ p {
 
 #accordion input:checked + label {
 	background:none;
-	font-size: 1.25em;
+	font-size: 1.2
+5em;
 	margin-bottom: 0;
 }
 #accordion article {
-	background: lightgray;
+	background:whitesmoke;
 	height:0px;
 	overflow:hidden;
 	z-index:10;
@@ -300,8 +298,6 @@ p {
 #accordion input:checked article {
 }
 #accordion input:checked ~ article {
-	border-bottom-left-radius: .25em;
-	border-bottom-right-radius: .25em;
 	height: auto;
 	margin-bottom: .125em;
 }
