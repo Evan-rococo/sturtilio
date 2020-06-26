@@ -7,8 +7,8 @@
     <g-image src="~/static/metal.gif"/>
     </g-link></div>
   </div><div class="right">
-    <div class="item item4"> <p>A sentimental ballad is an emotional style of music that often deals with romantic and <mark><g-link to="/product">intimate relationships</g-link></mark> and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poignant but solemn manner.</br>
-    <br>Ballads are generally melodic enough to get the listener's attention.[2] ant but solemn manner.[1] Ballads are generally melodic enough to get the listener's attention.[2]</p></div>
+    <div class="item item4"> <p>Here it comes, the site is all fixed and online. The idea here is to keep pumping this place full of hot records to sell.<br><br>
+    As of today, I would guess this should be as minimium viable product in 10 days or so. I need to get JS running so audio player works. I need to get instagram going too. Mailchimp, etc. So 10 days is about right.</p></div>
   </div>
 </div>
 	

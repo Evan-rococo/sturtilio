@@ -1,32 +1,22 @@
+
 <template>
   <Layout>
-  
-  <div class="container">
-  <div class="left" @click.prevent="toggleClass">
-  <i class="Icon">
-    <h3 style="text-decoration:none;">Conditions</h3>
-        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-  </i>
-  <div class="Sidebar1" v-bind:class="{ open: isActive}" style="opacity:100%;">
-        <p>A sentimental ballad is an emotional style of music that often deals with romantic and <mark><g-link to="/product">intimate relationships</g-link></mark> and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poignant but solemn manner.</br>
-    <br>Ballads are generally melodic enough to get the listener's attention.[2] ant but solemn manner.[1] Ballads are generally melodic enough to get the listener's attention.[2]</p>
+  <input type="range" min="150" max="400" value="300"> 
+<div>
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='150' cy='150' r='135' stroke='%23003300' stroke%2Dwidth='4' fill='%236ab150'/%3E%3C/svg%3E"  alt="test shape-outside + SVG">
+
+<p>En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, los días de entre semana se honraba con su vellori de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años, era de complexión recia, seco de carnes, enjuto de rostro; gran madrugador y amigo de la caza. </p>
 </div>
-</div>
-</div>
-  
-  
-  <div class="right">
-    <div class="item item4"> <p>A sentimental ballad is an emotional style of music that often deals with romantic and <mark><g-link to="/product">intimate relationships</g-link></mark> and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion, usually in a poignant but solemn manner.</br>
-    <br>Ballads are generally melodic enough to get the listener's attention.[2] ant but solemn manner.[1] Ballads are generally melodic enough to get the listener's attention.[2]</p></div>
-    </div>
-  </div>
-	
+
+
 
   </Layout>
 </template>
 
 <script>
  export default {
+
+   
         data: () => ({
             isActive: false
         }),
@@ -40,6 +30,24 @@
 
 
 <style scoped>
+
+  div{width:40em;
+  margin:1em auto;
+  padding:1em;
+  border:1px solid #d9d9d9;
+  font-family:Verdana, Geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+img{
+  width:300px;
+  height:300px;
+  float:left;
+  shape-margin:.5em;
+  /*shape-outside:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='150' cy='150' r='135' stroke='%23003300' stroke%2Dwidth='4' fill='%236ab150'/%3E%3C/svg%3E");*/
+}
+input{ width:40em; margin: 2em auto; display:block;}
+
 
 .container {
   display: flex;

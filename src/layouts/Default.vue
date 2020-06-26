@@ -18,8 +18,6 @@
             <br>
             <g-link to="/faq">Faq</g-link><br>
             <g-link to="/contact">contact</g-link><br>
-            <br>
-            <g-link to="/cart">Cart</g-link><br>
             <form class="example" style="font-size:1em;" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -92,7 +90,7 @@ body {
 
 .h12 {
   font-family: "tonii";
-  font-size:  1.25em;
+  font-size:  1em;
   }
 
 .p {
@@ -637,14 +635,14 @@ p {
   
    @media (max-width: 48em) {
      .Sidebar {
-      background:lime;
+      background:yellow;
       margin-left:-.0em;
       margin-top: .05em;
       padding-left:.67em;
       padding-top: .67em;
       padding-bottom: .34em;
       padding-right: .34em;
-      height: 14em;
+      height: 11.67em;
       width: 7em;
         }
       }

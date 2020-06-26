@@ -4,50 +4,7 @@
   <div class="container">
   <div class="left">
     <div class="item item1"><g-image src="~/static/Images/hrb7.jpg"/></div>
-    <div class="item item3">
-      
-    <div style="text-align:right;">
-        <h12 class style="font-family:Tonii; font-size:1.34em;">€129.00</h12><br>
-          <g-link to="/" style="font-family:Tonii; font-size:1.34em;">Order</g-link><br>
-             <section id="accordion" style="margin-top:.67em;">
-			<div>
-				<input type="checkbox" id="check-3" />
-				<label for="check-3" style="font-size:1em; padding-bottom:0.34em;">Shipping</label>
-				<article>
-					<p style="font-size:.8em; line-height:1em;">Payments can be made either by Paypal or, in the case of Swedish residents, Swish.</p>
-				</article>
-			</div>
-			<div>
-				<input type="checkbox" id="check-4" />
-				<label for="check-4" style="padding-bottom:0.34em; font-size:1em;">Conditions</label>
-				<article>
-					<p style="font-size:.8em; line-height:1em;">In your paypal payment, a tracking number will be added and can be searched <mark><g-link to="https://www.postnord.se/en/our-tools/track-and-trace2">right here.</g-link></mark>PostNord delivers within 5 working days in the EU and somewhere around 6-8 in North america and Asia.</p>
-				</article>
-			</div>
-		</section>
-    </div>
-
-              <div class="item item5" style="margin-top:.67em;">
-                
-        
-          
-</div>
-</div>
-      
-    
-</div><div class="right">
-  <div class="item item2">"Stand up for your rights" LP<br>
-     Feel it <br>
-     Guavo editionz <br>
-     South africa '89 <br>
-     Vinyl vg+ sleeve vg <br>
-  </div>
-    
-    <div class="item item4" style="margin-bottom:3.67em; font-size:1em;"> A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness. </br>
-    <br>Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion.. </br> 
-    <br>Usually in a poignant but solemn manner. <br>Ballads are generally melodic enough to get the listener's attention but solemn manner. Ballads are generally melodic enough to get the listener's attention.</div>
-    
-    <div class="item item6" style="text-align:right;"><div>
+    <div class="item item3" style="background-color:aqua; margin-top:1.34em;"><div>
           <audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
    Your browser does not support the audio element.
 </audio>
@@ -62,12 +19,46 @@
    Your browser does not support the audio element.
 </audio>
 <a class="btn" id="nyan-btn">New Casino</a><br>
+      </div>
+      
+  <div class="item item5" style="margin-top:0em;"></div></div>
+      </div>
+      
+
+<div class="right">
+  <div class="item item2" style="background-color:blue;">"Stand up for your rights" LP<br>
+     Feel it <br>
+     Guavo editionz <br>
+     South africa '89 <br>
+     Vinyl vg+ sleeve vg <br>
+  </div>
+    
+    <div class="item item4" style="background-color:orange;"> A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness. </br>
+    <br>Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion.. </br> 
+    <br>Usually in a poignant but solemn manner. <br>Ballads are generally melodic enough to get the listener's attention but solemn manner. Ballads are generally melodic enough to get the listener's attention.</div>
+    
+    <div class="item item6" style="background-color:orchid; margin-top:1.67em;"><div>
+        <h12 class style="font-family:Tonii; font-size:2em;">€13.92</h12><br>
+          <g-link to="/" style="font-family:Tonii; font-size:2em; margin-bottom:3.67em;">Order</g-link><br>
           
-          
-          </div>
+     <section id="accordion">
+			<div>
+				<input type="checkbox" id="check-8" />
+				<label for="check-8" style="font-size:1.34em;">Conditions</label>
+				<article>
+					<p>Pricing is a good topic. Everything considered (rarity, hype, condition, and the music itself), the pricing also reflects the time spent chasing down these records. Also included in the price is the number of shitty records I've bought in the gambling process of "discovering" something unknown.<br><br>
+          If the record is listed on discogs, I list cheaper. If there are no other copies available online, I'll try to find a price where it can sell for more in the future.<br><br>
+          I agree there is a sizeable speculativity, but I want to err on being conservative in my pricing.</p>
+				</article>
+			</div>
+		</section>
+       </div> 
+       <g-link to="/genre" style="font-size:1.34em;">Back to shop</g-link></div>
+       
         </div>
       </div>
     </div>
+   
   </Layout>
 </template>
 
@@ -134,7 +125,7 @@ p {
   width: 37%;}
 
   .item1 {
-  padding-bottom: 1.67em;
+  padding-bottom: 0em;
 }
 
 @media (max-width: 33em) {
@@ -150,6 +141,7 @@ p {
   text-align: left;
   background:none;
   }
+
   
 table {
   border-collapse: collapse;
@@ -193,7 +185,11 @@ table {
   }
 
 .item1 {
-  padding-bottom: 1.67em;
+  padding-bottom: 0em;
+}
+
+.item2 {
+  margin-top: 1em;
 }
 
 .left {
@@ -206,10 +202,10 @@ table {
 .item1, .item2{
   order: 1;
 }
-.item4, .item6{
+.item4, .item5{
   order: 2;
 }
-.item5, .item3{
+.item3, .item6{
   order: 3;
 }
 
@@ -241,13 +237,16 @@ table {
 
   .left{
     width: 60%;
-    margin-right: 2em;
+    margin-right: 1.34em;
     max-width: 42vw;}
 
  .item1 {
-  padding-bottom: 0em;
+  padding-bottom: em;
 }
 
+.item2 {
+  margin-top: 0em;
+}
   .right{
     width: 36%;
   } 
@@ -284,12 +283,12 @@ table {
 }
 .item2 {
   font-size: 1.67em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 .item3 {
-  margin-top:1.34em;
-  font-size: 1.34em;
-  line-height: 1em;  
+  font-size: 1em;
+  line-height: 1em;
+  text-align: right;
 }
 
 .btn{
@@ -322,7 +321,7 @@ table {
   }
   }
 
-  .btn{
+.btn{
    font-size: 1.25em;
    line-height: 1.5em;
    cursor:pointer;
@@ -370,4 +369,8 @@ table {
 	margin-bottom: .125em;
 }
 
+mark {
+  background-color: orchid;
+  color: black;
+  }
 </style>

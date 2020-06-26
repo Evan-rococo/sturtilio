@@ -284,7 +284,7 @@ label {
 	flex-wrap: wrap;
 	margin-top: 7.3em;
 	margin-left:1.67vw;
-	margin-right:vw;
+	margin-right:2vw;
 	margin-bottom:8em;
 	width:96vw;
 	background-color:none;

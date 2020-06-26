@@ -7,7 +7,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/b1.jpg" width="450em;" height="450em;"/>
+    <g-image src="~/static/Images/z8.jpg" width="450em;" height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -19,7 +19,7 @@
 		<div class="product-card">
 			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/a4.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/z7.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -31,7 +31,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/fosha.gif" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/z6.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 	<div class="product-info">
@@ -43,7 +43,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/s2.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/z9.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -79,7 +79,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb19.jpg" width="450em;"/>
+    <g-image src="~/static/Images/z5.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -91,7 +91,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/s4.jpg" width="450em;"/>
+    <g-image src="~/static/Images/z3.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -103,7 +103,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/hrb10.jpg" width="450em;"/>
+    <g-image src="~/static/Images/z2.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -115,7 +115,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/b5.jpg" width="450em;"/>
+    <g-image src="~/static/Images/z1.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">

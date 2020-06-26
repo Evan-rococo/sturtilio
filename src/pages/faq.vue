@@ -4,7 +4,7 @@
   <div class="container">
   <div class="left">
     <div class="item item1">
-      <h5 style="background-color:yellow; padding:.67em;line-height:1em;">UPN placed the series on hiatus on April 30, 2001, due to concerns about its low ratings; only two episodes had aired. Despite the network's claims, media commentators believed it would be removed from air following its poor performance.</h5>
+      <h5 style="background-color:yellow; padding:.67em;line-height:1em;">Welcome to the Frequently asked questions page. Here are the answers to them. In the chance that you have a question that is not frequently asked, please <mark><g-link to="/contact">gimme a holler over here.</g-link><br></mark></h5>
 </div>
       
 </div><div class="right">
@@ -12,16 +12,16 @@
       <section id="accordion">
 			  <div>
 				<input type="checkbox" id="check-5"/>
-				<label for="check-5" style="padding-bottom:0.67em;">Where do all these records come from?</label>
+				<label for="check-5" style="padding-bottom:0.67em;">Who are you?</label>
 				<article>
-					<p>While discussing the cancellation, McCouch felt it was "doomed to fail" from the beginning and referred to UPN as "a loser network at that time" due its treatment of the series. Cosgrove disagreed with McCouch's sentiment and believed the show's lack of success was not tied to the network specifically.</p>
+					<p>I'm just a guy buying too many records. If not addiction, its gotta be defined as compulsion. My name is Evan Jordan. I'm an american guy, living in sweden. <br><br> I guess i've been collecting seriously for.. what year is it now? It's been almost 10 years now. I'd like to think i'm pretty knowledgable about all this stuff. Please drop me a line if you've got any questions, requests or just wanna chat. </p>
 				</article>
 			</div>
 			<div>
 				<input type="checkbox" id="check-1" />
 				<label for="check-1" style="padding-bottom:0.67em;">What is this place all about?</label>
 				<article>
-					<p>Gillard developed the premise for All Souls from his belief that a medical facility would be an ideal setting for a horror series and his research on statistics of deaths that had taken place in a hospital.</p>
+					<p>Hope that this place becomes somewhere fun on the web. I'll be filing it with all sorts of records; the kind you like. All styles respected, but the stock is heavily weighted towards the lesser-known. It seems there is no end to the pool of '80s records. <br><br> In recent years, I'm leaning more and more towards do-it-yourself. Be it pop music, tropical, boogie, etc. so long as it hits right.</p>
 				</article>
 			</div>
       </section>
@@ -32,7 +32,9 @@
 				<input type="checkbox" id="check-8" />
 				<label for="check-8" style="padding-bottom:0.67em;">What's with these prices?</label>
 				<article>
-					<p>Reception of the series' pilot was mixed, with television critics divided over its structure.[5][9][25] Rob Owen of The Pittsburgh Post-Gazette gave the first episode a positive review, believing it set up enough story elements to show promise.</p>
+					<p>Pricing is a good topic. Everything considered (rarity, hype, condition, and the music itself), the pricing also reflects the time spent chasing down these records. Also included in the price is the number of shitty records I've bought in the gambling process of "discovering" something unknown.<br><br>
+          If the record is listed on discogs, I list cheaper. If there are no other copies available online, I'll try to find a price where it can sell for more in the future.<br><br>
+          I agree there is a sizeable speculativity, but I want to err on being conservative in my pricing.</p>
 				</article>
 			</div>
 		</section>
@@ -43,19 +45,14 @@
 				<input type="checkbox" id="check-3" />
 				<label for="check-3" style="padding-bottom:0.67em;">How do i pay?</label>
 				<article>
-					<p>A sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness.
-
-Death, drug abuse, politics and religion, usually in a poign pA sentimental ballad is an emotional style of music that often deals with romantic and intimate relationships, and to a lesser extent, war (protest songs), loneliness, death, drug abuse, politics and religion..
-
-Usually in a poignant but solemn manner.
-Ballads are generally melodic enough to get the listener's attention but solemn manner. Ballads are generally melodic enough to get the listener's attention.</p>
+					<p>Payments can be made either by Paypal or, in the case of Swedish residents, Swish.</p>
 				</article>
 			</div>
 			<div>
 				<input type="checkbox" id="check-4" />
-				<label for="check-4">How do i track an order?</label>
+				<label for="check-4">What can you tell me about shipping?</label>
 				<article>
-					<p>The entire Sino-Indian border (including the western LAC, the small undisputed section in the centre, and the McMahon Line in the east) is 4,056 km (2,520 mi) long and traverses one Indian union territory, Ladakh, and four Indian states: Uttarakhand, Himachal Pradesh, Sikkim, and Arunachal Pradesh.[4] On the Chinese side, the line traverses the Tibet Autonomous Region. The term was first used by Chinese Premier Zhou Enlai in a 1959 note to Indian Prime Minister Jawaharlal Nehru.[2] The demarcation existed as the informal cease-fire line between India and China after the 1962 Sino-Indian War until 1993, when its existence was officially accepted as the 'Line of Actual Control' in a bilateral agreement.</p>
+					<p>In your paypal payment, a tracking number will be added and can be searched <mark><g-link to="https://www.postnord.se/en/our-tools/track-and-trace2">right here.</g-link></mark>PostNord delivers within 5 working days in the EU and somewhere around 6-8 in North america and Asia.</p>
 				</article>
 			</div>
 		</section>
@@ -301,4 +298,9 @@ background-color: none;
 	height: auto;
 	margin-bottom: .125em;
 }
+
+mark {
+  background-color: orchid;
+  color: black;
+  }
 </style>
