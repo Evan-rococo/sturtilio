@@ -1,14 +1,46 @@
 <template>
   <Layout>
+  <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%; line-height:1em;">
+        <g-link to="/newstuff">New stuff</g-link><br>
+            <g-link to="/afro">afro</g-link><br>
+            <g-link to="/boogie">boogie</g-link><br>
+            <g-link to="/esoteric">esoteric</g-link><br>
+            <g-link to="/pop">pop music</g-link><br>
+            <g-link to="/reggae">reggae</g-link><br>
+            <br>
+            <g-link to="/faq">Faq</g-link><br>
+            <g-link to="/contact">contact</g-link><br>
+            <form class="example" action="/action_page.php" autocomplete="off">
+  <input type="text" placeholder="search" name="search" >
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+
+</div>
+<div class="Hamburger"  @click.prevent="toggleClass">
+  <i class="Icon">
+    <g-image src="~/static/d1.svg"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+  </i>
+</div>
   
   <div class="container">
   <div class="left">
-    <div class="item item1" style="margin-bottom:1.34em;"><g-link to="/product/">
+    <div class="item item1" style="margin-bottom:.34em;">
+      
+      <g-link to="/product/">
     <g-image src="~/static/metal.gif"/>
     </g-link></div>
-  </div><div class="right">
+    <div class="item item2"> <p style="margin-bottom:1.34em; font-size: 1em; text-align:right;transform: rotate(0deg)">Last updated: June 31, 2020 01:19am</p></div>
+  </div>
+
+  <div class="right">
     <div class="item item4"> <p>Here it comes, the site is all fixed and online. The idea here is to keep pumping this place full of hot records to sell.<br><br>
-    As of today, I would guess this should be as minimium viable product in 10 days or so. I need to get JS running so audio player works. I need to get instagram going too. Mailchimp, etc. So 10 days is about right.</p></div>
+    As of today, I would guess this should be as minimium viable product in 10 days or so. I need to get JS running so audio player works. I need to get instagram going too. Mailchimp, etc. So 10 days is about right.<br><br>
+    Right now, I'm mostly excited about the Elle et moi 12" from Belgian. I can't remember the artist name, but it's definitely high on my list and hasn't sold on discogs since the last copy i got in 2018. </p> <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/N07ow4LDWfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
   </div>
 </div>
 	
@@ -17,11 +49,16 @@
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Home'
-  }
-}
+ export default {
+        data: () => ({
+            isActive: false
+        }),
+        methods: {
+           toggleClass: function(event){
+       this.isActive = !this.isActive;
+    }
+        }
+    }
 </script>
 
 
@@ -33,7 +70,7 @@ export default {
   padding-top: 3.67em;
   margin-left: 26vw;
   margin-right: 2em;
-  margin-bottom: 8em;
+  margin-bottom: 4em;
   background-color:none;
   }
 
@@ -48,7 +85,7 @@ export default {
 @media (max-width: 33em) {
   .container {
     margin-bottom:8em;
-    padding-top: 3.67em;
+    padding-top: 3.em;
     background:none;
     }
 
@@ -82,11 +119,10 @@ export default {
 
 @media (max-width: 48em) {
   .container {
-    margin-left:5vw;
-    margin-right:5em;
-    margin-bottom:8em;
-    margin-top: 3.67em;
-    width: 90vw;
+    margin-left:2vw;
+    margin-bottom:4em;
+    margin-top: 4.34em;
+    width: 96vw;
     background-color:none;
     }
   }
@@ -124,16 +160,15 @@ export default {
   
   .container{
     display: block;
-    margin-left: 22vw;
     background-color: none;
-    margin-right: 2em;
     margin-left: 12em;
+    width: 81vw;
+    
     }
 
   .left{
-    width: 56%;
-    margin-right: 2em;
-    max-width: 42vw;
+    width: 42%;
+    margin-right: 2.67vw;
     }
 
   .item1 {
@@ -146,7 +181,7 @@ export default {
     }
 
   .right{
-    width: 36%;
+    width: 45%;
     background-color: none;
     } 
 }
@@ -159,13 +194,14 @@ export default {
   
   .container{
     display: block;
-    margin-left: 27vw;
-    margin-right: 2em;
+    margin-left: 24.67vw;
+    margin-right: 2.67vw;
+    width: 79vw;
     }
 
   .left{
-    width: 63%;
-    margin-right: 2em;
+    width: 42%;
+    margin-right: 2vw;
     max-width: 36vw;
     }
 
@@ -179,7 +215,7 @@ export default {
     }
 
   .right{
-    width: 33%;
+    width: 48%;
     background-color: none;
     } 
   }
@@ -189,4 +225,27 @@ mark {
   background-color: yellow;
   color: black;
   }
+  
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top:1.67em;
+    z-index: -3;
+}
+
 </style>

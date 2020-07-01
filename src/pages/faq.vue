@@ -1,10 +1,36 @@
 <template>
   <Layout>
+         <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%; line-height:1em;">
+        <g-link to="/newstuff">New stuff</g-link><br>
+            <g-link to="/afro">afro</g-link><br>
+            <g-link to="/boogie">boogie</g-link><br>
+            <g-link to="/esoteric">esoteric</g-link><br>
+            <g-link to="/pop">pop music</g-link><br>
+            <g-link to="/reggae">reggae</g-link><br>
+            <br>
+            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="/faq">Faq</g-link></mark><br>
+            <g-link to="/contact">contact</g-link><br>
+            <form class="example" action="/action_page.php" autocomplete="off">
+  <input type="text" placeholder="search" name="search" >
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+       
+
+      
+
+</div>
+<div class="Hamburger"  @click.prevent="toggleClass">
+  <i class="Icon">
+    <g-image src="~/static/d1.svg"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+  </i>
+</div>
   
   <div class="container">
   <div class="left">
     <div class="item item1">
-      <h5 style="background-color:yellow; padding:.67em;line-height:1em;">Welcome to the Frequently asked questions page. Here are the answers to them. In the chance that you have a question that is not frequently asked, please <mark><g-link to="/contact">gimme a holler over here.</g-link><br></mark></h5>
+      <h5 style="background-color:yellow; padding:.67em;line-height:1em;">Welcome to the Frequently asked questions page. Here are the answers to them. In the chance that you have a question that is not frequently asked, please <g-link to="/contact">gimme a holler over here.</g-link><br></h5>
 </div>
       
 </div><div class="right">
@@ -14,14 +40,14 @@
 				<input type="checkbox" id="check-5"/>
 				<label for="check-5" style="padding-bottom:0.67em;">Who are you?</label>
 				<article>
-					<p>I'm just a guy buying too many records. If not addiction, its gotta be defined as compulsion. My name is Evan Jordan. I'm an american guy, living in sweden. <br><br> I guess i've been collecting seriously for.. what year is it now? It's been almost 10 years now. I'd like to think i'm pretty knowledgable about all this stuff. Please drop me a line if you've got any questions, requests or just wanna chat. </p>
+					<p style="margin-bottom:.67em;">I'm just a guy buying too many records. If not addiction, its gotta be defined as compulsion. My name is Evan Jordan. I'm an american guy, living in sweden. <br><br> I guess i've been collecting seriously for.. what year is it now? It's been almost 10 years now. I'd like to think i'm pretty knowledgable about all this stuff. Please drop me a line if you've got any questions, requests or just wanna chat. </p>
 				</article>
 			</div>
 			<div>
 				<input type="checkbox" id="check-1" />
 				<label for="check-1" style="padding-bottom:0.67em;">What is this place all about?</label>
 				<article>
-					<p>Hope that this place becomes somewhere fun on the web. I'll be filing it with all sorts of records; the kind you like. All styles respected, but the stock is heavily weighted towards the lesser-known. It seems there is no end to the pool of '80s records. <br><br> In recent years, I'm leaning more and more towards do-it-yourself. Be it pop music, tropical, boogie, etc. so long as it hits right.</p>
+					<p style="margin-bottom:.67em;">Hope that this place becomes somewhere fun on the web. I'll be filing it with all sorts of records; the kind you like. All styles respected, but the stock is heavily weighted towards the lesser-known. It seems there is no end to the pool of '80s records. <br><br> In recent years, I'm leaning more and more towards do-it-yourself. Be it pop music, tropical, boogie, etc. so long as it hits right.</p>
 				</article>
 			</div>
       </section>
@@ -32,7 +58,7 @@
 				<input type="checkbox" id="check-8" />
 				<label for="check-8" style="padding-bottom:0.67em;">What's with these prices?</label>
 				<article>
-					<p>Pricing is a good topic. Everything considered (rarity, hype, condition, and the music itself), the pricing also reflects the time spent chasing down these records. Also included in the price is the number of shitty records I've bought in the gambling process of "discovering" something unknown.<br><br>
+					<p style="margin-bottom:.67em;">Pricing is a good topic. Everything considered (rarity, hype, condition, and the music itself), the pricing also reflects the time spent chasing down these records. Also included in the price is the number of shitty records I've bought in the gambling process of "discovering" something unknown.<br><br>
           If the record is listed on discogs, I list cheaper. If there are no other copies available online, I'll try to find a price where it can sell for more in the future.<br><br>
           I agree there is a sizeable speculativity, but I want to err on being conservative in my pricing.</p>
 				</article>
@@ -45,14 +71,14 @@
 				<input type="checkbox" id="check-3" />
 				<label for="check-3" style="padding-bottom:0.67em;">How do i pay?</label>
 				<article>
-					<p>Payments can be made either by Paypal or, in the case of Swedish residents, Swish.</p>
+					<p style="margin-bottom:.67em;">Payments can be made either by Paypal or, in the case of Swedish residents, Swish.</p>
 				</article>
 			</div>
 			<div>
 				<input type="checkbox" id="check-4" />
 				<label for="check-4">What can you tell me about shipping?</label>
 				<article>
-					<p>In your paypal payment, a tracking number will be added and can be searched <mark><g-link to="https://www.postnord.se/en/our-tools/track-and-trace2">right here.</g-link></mark>PostNord delivers within 5 working days in the EU and somewhere around 6-8 in North america and Asia.</p>
+					<p style="margin-bottom:.67em;">In your paypal payment, a tracking number will be added and can be searched <mark><g-link to="https://www.postnord.se/en/our-tools/track-and-trace2">right here.</g-link></mark>PostNord delivers within 5 working days in the EU and somewhere around 6-8 in North america and Asia.</p>
 				</article>
 			</div>
 		</section>
@@ -63,12 +89,16 @@
 </template>
 
 <script>
-export default {
-  
-  metaInfo: {
-    
-    title: 'Product'}
-}
+ export default {
+        data: () => ({
+            isActive: false
+        }),
+        methods: {
+           toggleClass: function(event){
+       this.isActive = !this.isActive;
+    }
+        }
+    }
 </script>
 
 
@@ -123,7 +153,7 @@ p {
 
 @media (max-width: 33em) {
   .container {
-    margin-bottom:8em;
+    margin-bottom:4em;
     padding-top: 0em;
     background: none;
     }
@@ -155,11 +185,11 @@ p {
 }
 @media (max-width: 48em) {
   .container {
-    margin-left:4vw;
-    margin-right:5vw;
+    margin-left:2vw;
+    margin-right:2vw;
     margin-bottom:8em;
-    margin-top: 5.28em;
-    width: 92vw;
+    margin-top: 5.9em;
+    width: 95.67vw;
     background-color:none;
     }
 }
@@ -210,6 +240,7 @@ background-color: none;
     background-color: none;
     margin-top: 1.67em;
     margin-left: 12em;
+    width: 75vw;
   }
   .left{
     width: 60%;
@@ -231,8 +262,8 @@ background-color: none;
   
   .container{
     display: block;
-    margin-left: 27vw;
-    width: 64vw;
+    margin-left: 24.67vw;
+    width: 67vw;
   }
   .left{
      width: 50%;
@@ -284,7 +315,7 @@ background-color: none;
 	margin-bottom: 0;
 }
 #accordion article {
-	background:whitesmoke;
+	background: none;
 	height:0px;
 	overflow:hidden;
 	z-index:10;
@@ -300,7 +331,7 @@ background-color: none;
 }
 
 mark {
-  background-color: orchid;
+  background-color: yellow;
   color: black;
   }
 </style>

@@ -8,52 +8,18 @@
     <g-link to="/"></g-link>
   </div>
 </div>
-      <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
-        <g-link to="/">New stuff</g-link><br>
-            <g-link to="/afro">afro</g-link><br>
-            <g-link to="/genre">boogie</g-link><br>
-            <g-link to="/genre">esoteric</g-link><br>
-            <g-link to="/genre">pop music</g-link><br>
-            <g-link to="/genre">reggae</g-link><br>
-            <br>
-            <g-link to="/faq">Faq</g-link><br>
-            <g-link to="/contact">contact</g-link><br>
-            <form class="example" style="font-size:1em;" action="/action_page.php" autocomplete="off">
-  <input type="text" placeholder="search" name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
-       
-
-      
-
-</div>
-<div class="Hamburger"  @click.prevent="toggleClass">
-  <i class="Icon">
-    <g-image src="~/static/d1.svg"/>
-        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-    </svg>
-  </i>
-</div>
+ 
     
     <slot/>
     <div class="footer">
     <div class="marquee">
-        <p>Opening soon, sometime this month, god willing. Still a lot to do tbh</p>
+        <p></p>
     </div></footer></div>
   </div>
 </template>
 
 <script>
- export default {
-        data: () => ({
-            isActive: false
-        }),
-        methods: {
-           toggleClass: function(event){
-       this.isActive = !this.isActive;
-    }
-        }
-    }
+
 </script>
 
 <style>
@@ -125,7 +91,7 @@ h5 {
   font-family: "Tonii-blacc";
   font-size:  2em;
   letter-spacing: -0.03em;
-  text-shadow: 2px 2px 2px white;
+  text-shadow: 3px 5px 3px white;
   }
 .layout {
   width: 100%;
@@ -319,13 +285,11 @@ form.example button {
   float: left;
   width: 10%;
   padding: 0px;
-  background: orange;
   color: none;
   border: none;
   cursor: pointer;
   margin-left:0em;
   outline: 0px solid transparent;
-  text-decoration: black !important;
 }
 
 form.example button:hover {
@@ -339,6 +303,7 @@ form.example::after {
   display: table;
   font-family: 'elmo';
   text-decoration: black;
+  
 }
 
 @font-face {
@@ -382,6 +347,7 @@ form.example::after {
   margin-top: 3em;
   opacity: 0;
   z-index: 2;
+  margin-left:2.5vw;
 }
 @media (max-width: 48em) {
 
@@ -401,7 +367,7 @@ form.example::after {
   }
   .Hamburger {
     opacity: 1;
-    margin-left:3vw;
+    margin-left:2.5vw;
     top: -2.2em;
   }
  
@@ -542,27 +508,27 @@ form.example::after {
   width: 100%;}
 
 .marquee {
-            height: 2em;
+            height: 1.67em;
             overflow: hidden;
             position: relative;
-            background: yellow;
+            background:none;
             color: black;
             align-items:baseline;
         }
         
         .marquee p {
             position: fixed;
-            width: 100%;
+            width: 400%;
             height: 100%;
             margin: 0;
             line-height: 2em;
             text-align: center;
             -moz-transform: translateX(100%);
             -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+            transform: translateX(200%);
             -moz-animation: scroll-left 1s linear infinite;
             -webkit-animation: scroll-left 1s linear infinite;
-            animation: scroll-left 9s linear infinite;
+            animation: scroll-left 15s linear infinite;
         }
         
         @-moz-keyframes scroll-left {
@@ -634,17 +600,23 @@ p {
   width: 37%;}
   
    @media (max-width: 48em) {
+     .Hamburger {
+  margin-left: 2.34vw;
+}
+     
      .Sidebar {
       background:yellow;
       margin-left:-.0em;
-      margin-top: .05em;
-      padding-left:.67em;
+      margin-top: .44em;
+      padding-left:.34em;
       padding-top: .67em;
       padding-bottom: .34em;
       padding-right: .34em;
       height: 11.67em;
       width: 7em;
         }
+
+        
       }
 
 </style>

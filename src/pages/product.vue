@@ -1,5 +1,31 @@
 <template>
   <Layout>
+    <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%; line-height:1em;">
+        <g-link to="/newstuff">New stuff</g-link><br>
+            <g-link to="/afro">afro</g-link><br>
+            <g-link to="/boogie">boogie</g-link><br>
+            <g-link to="/esoteric">esoteric</g-link><br>
+            <g-link to="/pop">pop music</g-link><br>
+            <g-link to="/reggae">reggae</g-link><br>
+            <br>
+            <g-link to="/faq">Faq</g-link><br>
+            <g-link to="/contact">contact</g-link><br>
+            <form class="example" action="/action_page.php" autocomplete="off">
+  <input type="text" placeholder="search" name="search" >
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+       
+
+      
+
+</div>
+<div class="Hamburger"  @click.prevent="toggleClass">
+  <i class="Icon">
+    <g-image src="~/static/d1.svg"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+  </i>
+</div>
   
   <div class="container">
   <div class="left">
@@ -9,7 +35,7 @@
     <div style="text-align:right;">
         <h12 class style="font-family:Tonii; font-size:1.34em;">€129.00</h12><br>
           <g-link to="/" style="font-family:Tonii; font-size:1.34em;">Order</g-link><br>
-             <section id="accordion" style="margin-top:.67em;">
+             <section id="accordion" style="margin-top:.34em;">
 			<div>
 				<input type="checkbox" id="check-3" />
 				<label for="check-3" style="font-size:1em; padding-bottom:0.34em;">Shipping</label>
@@ -120,7 +146,7 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 3.67em;
+  margin-top: 4.34em;
   margin-left: 26vw;
   margin-bottom: 0em;
   background-color:none;
@@ -177,11 +203,11 @@ table {
 }
 @media (max-width: 48em) {
   .container {
-    margin-left:4vw;
-    margin-right:5vw;
+    margin-left:1.8vw;
+    margin-right:2vw;
     margin-bottom:3.67em;
     padding-top: 3.67em;
-    width: 92vw;
+    width: 96vw;
     background-color:none;
     }
 }
@@ -193,7 +219,7 @@ table {
   }
 
 .item1 {
-  padding-bottom: 1.67em;
+  padding-bottom: 1em;
 }
 
 .left {
@@ -227,6 +253,7 @@ table {
     margin-top: 3.67em;
     margin-left: 12em;
     margin-bottom: 3.67em;
+     width: 77vw;
   }
 
 table {
@@ -240,8 +267,8 @@ table {
 }
 
   .left{
-    width: 60%;
-    margin-right: 2em;
+    width: 44%;
+    margin-right: 2vw;
     max-width: 42vw;}
 
  .item1 {
@@ -249,7 +276,7 @@ table {
 }
 
   .right{
-    width: 36%;
+    width: 48%;
   } 
 }
 
@@ -261,7 +288,7 @@ table {
   
   .container{
     display: block;
-    margin-left: 27vw;
+    margin-left: 24.67vw;
   }
 
 table {
@@ -274,7 +301,7 @@ table {
 
   .left{
     width: 60%;
-    margin-right: 2em;
+    margin-right: 2vw;
     max-width: 450px;}
   
   .right{
@@ -301,7 +328,6 @@ table {
    }
 
  .Sidebar1 {
-  background:whitesmoke;
   line-height: 1em;
   padding:.67em;
       
@@ -355,13 +381,13 @@ table {
 	margin-bottom: 0;
 }
 #accordion article {
-	background:whitesmoke;
+	background: none;
 	height:0px;
 	overflow:hidden;
 	z-index:10;
 }
 #accordion article p {
-	padding: 1em;
+	padding: .67em 0em;
 }
 #accordion input:checked article {
 }

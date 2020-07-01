@@ -1,6 +1,31 @@
 <template>
   <Layout>
-  
+  <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%; line-height:1em;">
+        <g-link to="/newstuff">New stuff</g-link><br>
+            <g-link to="/afro">afro</g-link><br>
+            <g-link to="/boogie">boogie</g-link><br>
+            <g-link to="/esoteric">esoteric</g-link><br>
+            <g-link to="/pop">pop music</g-link><br>
+            <g-link to="/reggae">reggae</g-link><br>
+            <br>
+            <g-link to="/faq">Faq</g-link><br>
+            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="/contact">contact</g-link></mark><br>
+            <form class="example" action="/action_page.php" autocomplete="off">
+  <input type="text" placeholder="search" name="search" >
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+       
+
+      
+
+</div>
+<div class="Hamburger"  @click.prevent="toggleClass">
+  <i class="Icon">
+    <g-image src="~/static/d1.svg"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+  </i>
+</div>
   <div class="container">
     
     <h5 style="background-color:yellow; padding:.67em;line-height:1em;">UPN placed the series on hiatus on April 30, 2001, due to concerns about its low ratings; only two episodes had aired. Despite the network's claims, media commentators believed it would be removed from air following its poor performance. <br>
@@ -39,7 +64,7 @@
       <label for="subject">Subject</label>
     </div>
     <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="" style="text-align:right; color:orchid; height:9em;" ></textarea>
+      <textarea id="subject" name="subject" placeholder="" style="text-align:right; color:orchid; height:6em;" ></textarea>
     </div>
   </div>
   <div class="row">
@@ -54,11 +79,16 @@
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Home'
-  }
-}
+ export default {
+        data: () => ({
+            isActive: false
+        }),
+        methods: {
+           toggleClass: function(event){
+       this.isActive = !this.isActive;
+    }
+        }
+    }
 </script>
 
 
@@ -83,11 +113,11 @@ export default {
 
 @media (max-width: 48em) {
   .container {
-    margin-left:5vw;
-    margin-right:5vw;
+    margin-left:2vw;
+    margin-right:2vw;
     margin-bottom:8em;
-    margin-top: 5.2em;
-    width: 90vw;
+    margin-top: 5.9em;
+    width: 95.67vw;
     }
   }
 
@@ -115,7 +145,7 @@ export default {
     margin-top:3.67em;
     margin-right: 2em;
     margin-left: 12em;
-    width: 72vw;
+    width: 73vw;
     }
 
   .col-25 {
@@ -138,10 +168,10 @@ export default {
   
   .container{
     display: block;
-    margin-left: 27vw;
-    margin-right: 2em;
-    margin-top:4em;
-    width: 64vw;
+    margin-left: 24.67vw;
+    margin-right: em;
+    margin-top:3.67em;
+    width: 62vw;
     }
 
   .col-25 {
@@ -185,7 +215,7 @@ label {
 input[type=submit] {
   background-color:white;
   font-size: 1.67em;
-  font-family: 'elmo';
+  font-family: 'tonii';
   border: none;
 
   padding:0em;

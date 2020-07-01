@@ -1,54 +1,82 @@
-
 <template>
+<body>
+	  <div class="overlay"></div>
+    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/gao.png"/></div>
   <Layout>
+	     <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
+        <g-link to="/newstuff">New stuff</g-link><br>
+            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="/afro">afro</g-link></mark><br>
+            <g-link to="/boogie">boogie</g-link><br>
+            <g-link to="/esoteric">esoteric</g-link><br>
+            <g-link to="/pop">pop music</g-link><br>
+            <g-link to="/reggae">reggae</g-link><br>
+            <br>
+            <g-link to="/faq">Faq</g-link><br>
+            <g-link to="/contact">contact</g-link><br>
+            <form class="example" action="/action_page.php" autocomplete="off">
+  <input type="text" placeholder="search" name="search" >
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+       
+
+      
+
+</div>
+<div class="Hamburger"  @click.prevent="toggleClass">
+  <i class="Icon">
+    <g-image src="~/static/d1.svg"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+  </i>
+</div>
     <nav class="product-filter">
 	</nav>
 	<section class="products">
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/z8.jpg" width="450em;" height="450em;"/>
+    <g-image src="~/static/Images/p5.png" width="450em;" height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<p>"Stand up for your rights" LP</p>
-				<p>Feel it</p>
+				<p>"Ich träume so leise von dir" LP</p>
+				<p>Becker, Stegmann, Lasker-Schuler</p>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/z7.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/p1.png" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<p>Walk in the park 12"</p>
-				<p>Eros</p>
+				<p>Mr. mac 12"</p>
+				<p>Steve williams</p>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/z6.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/p3.png" width=450em; height="450em;"/>
     </g-link>
 			</div>
 	<div class="product-info">
-				<p>Walk in the park 12"</p>
-				<p>Eros</p>
+				<p>Sketches of anderland 7"</p>
+				<p>Angelo vanotti</p>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/z9.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/p5.png" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Light tanning" LP</h3>
-				<h3>Sun tan club</h3>
+				<h3>"I know you feel it" LP</h3>
+				<h3>Kumasi</h3>
 			</div>
 		</div>
 		
@@ -59,8 +87,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Sex total" EP</h3>
-				<h3>Various artists</h3>
+				<h3>S/t LP</h3>
+				<h3>Puzzle</h3>
 			</div>
 		</div>
 
@@ -83,8 +111,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Coco rico" LP</h3>
-				<h3>Cool aid</h3>
+				<h3>Tender lover 7"</h3>
+				<h3>Eddy amiante</h3>
 			</div>
 		</div>
 		
@@ -95,32 +123,32 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Bohobe spirits music" LP</h3>
-				<h3>Norberto de noah</h3>
+				<h3>My name is bond 12"</h3>
+				<h3>Beat control</h3>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/z2.jpg" width="450em;"/>
+    <g-image src="~/static/Images/p4.png" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Magmama 12"</h3>
-				<h3>Stimela</h3>
+				<h3>Feeling Nice 12"</h3>
+				<h3>Jam-master king</h3>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/z1.jpg" width="450em;"/>
+    <g-image src="~/static/Images/p2.png" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Fight for your rights" LP</h3>
-				<h3>Feel it</h3>
+				<h3>"Jazz maiden" EP</h3>
+				<h3>Accura</h3>
 			</div>
 		</div>
 		
@@ -131,15 +159,15 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Sick sicc" EP</h3>
-				<h3>Sex total</h3>
+				<h3>"Böhöbé Spirits Music" LP</h3>
+				<h3>Norberto de nöah</h3>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/a1.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/p1.png" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -149,15 +177,21 @@
 		</div>
 		
 	</section>
-  </Layout>
+	
+  </Layout></body>
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'Genre'
-  }
-}
+ export default {
+        data: () => ({
+            isActive: false
+        }),
+        methods: {
+           toggleClass: function(event){
+       this.isActive = !this.isActive;
+    }
+        }
+    }
 </script>
 
 <style scoped>
@@ -253,8 +287,8 @@ label {
 	display: flex;
 	flex-direction: column;
 	flex: 1 30%;
-	padding-left:.5em;
-	padding-right:.5em;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .product-image img {
@@ -263,9 +297,10 @@ label {
 
 .product-info {
 	margin-top: auto;
-	padding-top: .33vw;
-	padding-bottom: .67em;
+	padding-top: .67em;
+	padding-bottom: 1em;
 	text-align: right;
+	font-size: calc(.34em + 1.34vw);
 }
 
 @media ( max-width: 48em ) {
@@ -282,37 +317,86 @@ label {
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 7.3em;
-	margin-left:1.67vw;
-	margin-right:vw;
+	margin-top: 8em;
+	margin-left:2vw;
 	margin-bottom:8em;
 	width:96vw;
 	background-color:none;
 	}
+
+	.overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1%;
+        width: 1%;
+        z-index: 10;
+      }
+
+    .modal {
+        width: 28vw;
+        position: fixed;
+        top: 30%;
+        left: 36%;
+        text-align: center;
+        z-index: 11;
+      }
+
+	.header a {
+    float: right;
+    display: block;
+    align-items: center;
+    background-color:none;
+    margin-right: .5em;
+    margin-top:0em;
+    }
+
+    .header {
+    float: right;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    }
+    
+    .header-right {
+    margin-top:0.96em;
+    font-size: 1.5em;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color:none;
+  	}
+
 }
 
 @media ( max-width: 33em ) {
 	
-	.product-card {
-		flex: 2 50%;
+
+}
+
+@media ( min-width: 48em ) {
+	
+	h1 {
+		margin-bottom: 0;
 	}
 
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 7.34em;
-	margin-left:1em;
-	width:94vw;
+	margin-top: 3.67em;
+	margin-left:23.67vw;
+	width:75.34vw;
 	flex: 1 36%;
 	}
-	
-}
 
-@media ( max-width: 1300px ) {
-	
-	h1 {
-		margin-bottom: 0;
-	}
+	.product-info {
+	margin-top: auto;
+	padding-top: .67em;
+	padding-bottom: 1em;
+	text-align: right;
+	font-size: calc(.34em + .67vw);
+}
 	
 	.product-filter {
 		flex-direction: column;
@@ -321,7 +405,270 @@ label {
 	.sort {
 		align-self: flex-start;
 	}
-	
+
+	 .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1%;
+        width: 1%;
+        z-index: 10;
+      }
+      .modal {
+        width: 24.34vw;
+        position: fixed;
+        top: 30%;
+        left: 49.2%;
+        text-align: center;
+        z-index: 11;
+      }
+
+	    .form.example input[type=text] {
+  font-family: 'elmo';
+  font-size: 1em;
+  float: left;
+  width: 90%;
+  border: none;
+  outline: 0px solid transparent;
+  padding-left:0em;
+  background: none;
+  text-decoration: black;
 }
 
+
+
+
+.header-right {
+  float: right;
+  font-size: 2em;
+  margin-right: 9vw;
+  background-color: none;
+  }}
+
+@media screen and (max-width: 64em) {
+
+  .header a {
+    background-color: none;
+    margin-left: .86vw;
+    float: left;
+    }
+
+   .header {
+    background-color:none;
+    } 
+    
+  .header-right {
+    float: fixed;
+    background-color: none;
+  }
+}
+
+  
+@media screen and (max-width: 33em) {
+	.product-card {
+		flex: 2 50%;
+	}
+
+	.products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 8em;
+	margin-left: 1vw;
+	width:98vw;
+	flex: 1 36%;
+	}	
+
+  .header a {
+  float: right;
+  display: block;
+  text-align: right;
+  margin-right: 1.67vw;
+  position: relative;
+  left: 0;
+  top: 0;
+  }
+
+ .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+} 
+    
+.header-right {
+  float: left;
+  margin-left:3em;
+  margin-top:-1.5em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  }
+}
+
+form.example input[type=text] {
+  font-family: 'elmo';
+  font-size: 1.67em;
+  float: left;
+  width: 100%;
+  padding-left:0em;
+  background: none;
+  text-decoration: black;
+}
+
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 0px;
+  color: none;
+  border: none;
+  cursor: pointer;
+  margin-left:0em;
+  outline: 0px solid transparent;
+}
+
+form.example button:hover {
+  background: red;
+  border: none;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+  font-family: 'elmo';
+  text-decoration: black;
+  
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: red;
+}
+/* Main content */
+.main {
+  margin-top: 0px;}
+.Sidebar {
+  background:none; opacity: 100%;
+  position: fixed;
+  top: 4.34em;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin-left: 8vw;
+  font-size: 1.67em;
+  width: 7em;
+}
+.Hamburger {
+  position: fixed;
+  margin-top: 3em;
+  opacity: 0;
+  z-index: 2;
+  margin-left:2.5vw;
+}
+@media (max-width: 48em) {
+
+  .header a {
+  float: right;
+  display: block;
+  text-align: right;
+  margin-right: 1.67vw;
+  position: relative;
+  left: 0;
+  top: 0;
+  }
+  .Sidebar {
+    transform: translate3d(-100%, 0, 0);
+    top: 3em;
+    
+  }
+  .Hamburger {
+    opacity: 1;
+    margin-left:2.5vw;
+    top: -2.2em;
+  }
+ 
+  .Sidebar.open {
+    transform: translate3d(0, 0, 0);
+     .left, .right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 1.2em;
+        }
+      }
+    }
+
+    form.example input[type=text] {
+  font-family: 'elmo';
+  font-size: 1em;
+  float: left;
+  width: 100%;
+  border: none;
+  outline: 0px solid transparent;
+  padding-left:0em;
+  background:none;
+  text-decoration: black;
+}
+
+
+@media (min-width: 48em){
+  }
+
+@media (max-width: 64em) {
+  .Sidebar {
+  position: fixed;
+  background:none;
+  top: 4.34em;
+  bottom: 0;
+  left: 0;
+  background:none;
+  opacity: 100%;
+  z-index: 0;
+  margin-left: 2.34vw;
+  width: 6em;
+  }
+}
+
+.topnav input[type=text] {
+  float: right;
+  border: none;
+  margin-top: 1em;
+  margin-right: 1.8em;
+  margin-left: 3vw;
+  position: relative;
+}
+
+.sticky {
+  position: relative;
+  top: 0;
+  width: 100%;}
+
+  
+   @media (max-width: 48em) {
+     .Hamburger {
+  margin-left: 2.34vw;
+}
+     
+     .Sidebar {
+      background:yellow;
+      margin-left:-.0em;
+      margin-top: .44em;
+      padding-left:.34em;
+      padding-top: .67em;
+      padding-bottom: .34em;
+      padding-right: .34em;
+      height: 11.67em;
+      width: 7em;
+        }
+
+        
+      }
+
+  
 </style>

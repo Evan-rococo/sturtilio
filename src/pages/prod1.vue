@@ -3,7 +3,7 @@
   
   <div class="container">
   <div class="left">
-    <div class="item item1"><g-image src="~/static/Images/hrb7.jpg"/></div>
+    <div class="item item1"><input class="native-hidden" type="checkbox" /></div>
     <div class="item item3" style="background-color:aqua; margin-top:1.34em;"><div>
           <audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg">
    Your browser does not support the audio element.
@@ -63,7 +63,10 @@
 </template>
 
 <script>
+
+
  export default {
+
         data: () => ({
             isActive: false
         }),
@@ -72,7 +75,9 @@
        this.isActive = !this.isActive;
     }
         }
+        
     }
+    
 </script>
 
 
@@ -373,4 +378,20 @@ mark {
   background-color: orchid;
   color: black;
   }
+
+input[type="checkbox"] {
+    content: url('http://placekitten.com/200/210');
+    display: block;
+    width: 200px;
+    height: 200px;
+    border:none;
+}
+input[type="checkbox"]:checked {
+    content: url('/ececo/src/static/Images/p1.png');
+}
+.native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+ 
 </style>
