@@ -7,12 +7,14 @@
         <g-link to="/newstuff">New stuff</g-link><br>
             <g-link to="/afro">afro</g-link><br>
             <g-link to="/boogie">boogie</g-link></mark><br>
-            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="/genre">esoteric</g-link></mark><br>
+            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="">esoteric</g-link></mark><br>
             <g-link to="/pop">pop music</g-link><br>
             <g-link to="/reggae">reggae</g-link><br>
-            <br>
+             <br>
             <g-link to="/faq">Faq</g-link><br>
             <g-link to="/contact">contact</g-link><br>
+            <br>
+            <g-link to="/cart">Cart (0)</g-link><br>
             <form class="example" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search" >
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -35,7 +37,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/b8.jpg" width="450em;" height="450em;"/>
+    <g-image src="~/static/Images/g2.jpg" width="450em;" height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -275,10 +277,10 @@ label {
 .products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top:3.67em;
-	margin-left:26vw;
+	margin-top:6em;
+	margin-left:1vw;
 	margin-bottom: 8em;
-	width:66vw;
+	width:98vw;
 	background-color:none;
 	
 }
@@ -300,6 +302,7 @@ label {
 	padding-top: .67em;
 	padding-bottom: 1em;
 	text-align: right;
+  background-color: white;
 	font-size: calc(.34em + 1.34vw);
 }
 
@@ -312,16 +315,6 @@ label {
 	.products .product-card:first-child, 
 	.products .product-card:nth-child(2) {
 	flex: 2 30%;
-	}
-
-	.products {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 8em;
-	margin-left:2vw;
-	margin-bottom:8em;
-	width:96vw;
-	background-color:none;
 	}
 
 	.overlay {
@@ -384,10 +377,11 @@ label {
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 3.67em;
+	margin-top: 2.34em;
 	margin-left:23.67vw;
 	width:75.34vw;
 	flex: 1 36%;
+  background-color: none;
 	}
 
 	.product-info {
@@ -395,6 +389,7 @@ label {
 	padding-top: .67em;
 	padding-bottom: 1em;
 	text-align: right;
+  background-color: white;
 	font-size: calc(.34em + .67vw);
 }
 	
@@ -472,10 +467,11 @@ label {
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 8em;
+	margin-top: 6em;
 	margin-left: 1vw;
 	width:98vw;
 	flex: 1 36%;
+  background-color:none;
 	}	
 
   .header a {
@@ -549,7 +545,6 @@ form.example::after {
 .Sidebar {
   background:none; opacity: 100%;
   position: fixed;
-  top: 4.34em;
   bottom: 0;
   left: 0;
   z-index: 0;
@@ -617,14 +612,11 @@ form.example::after {
 }
 
 
-@media (min-width: 48em){
-  }
-
 @media (max-width: 64em) {
   .Sidebar {
   position: fixed;
   background:none;
-  top: 4.34em;
+  top: 3.6em;
   bottom: 0;
   left: 0;
   background:none;
@@ -658,17 +650,33 @@ form.example::after {
      .Sidebar {
       background:yellow;
       margin-left:-.0em;
-      margin-top: .44em;
       padding-left:.34em;
-      padding-top: .67em;
+      padding-top: .5em;
       padding-bottom: .34em;
       padding-right: .34em;
-      height: 11.67em;
+      height: 12.67em;
       width: 7em;
         }
-
-        
       }
-
- 
+ @media (min-width: 64em) {
+    	.products {
+	margin-top: 2.6em;
+  background-color: none;
+	}	
+     .Sidebar {
+      position: fixed;
+  background:none;
+  top: 3.6em;
+  bottom: 0;
+  left: 0;
+  background:none;
+  opacity: 100%;
+  z-index: 0;
+  margin-left: 7.34vw;
+  width: 6em;
+        }
+      }
+  #nav{
+  display:none;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
 <body>
 	  <div class="overlay"></div>
-    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/gao.png"/></div>
+    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src=""/></div>
   <Layout>
 	     <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
         <g-link to="/newstuff">New stuff</g-link><br>
@@ -9,10 +9,12 @@
             <g-link to="/boogie">boogie</g-link><br>
             <g-link to="/esoteric">esoteric</g-link><br>
             <g-link to="/pop">pop music</g-link><br>
-            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="/reggae">reggae</g-link></mark><br>
+            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="">reggae</g-link></mark><br>
             <br>
             <g-link to="/faq">Faq</g-link><br>
             <g-link to="/contact">contact</g-link><br>
+            <br>
+            <g-link to="/cart">Cart (0)</g-link><br>
             <form class="example" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search" >
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -95,7 +97,7 @@
 		<div class="product-card">
 			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/p3.png" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/hrb16.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -167,7 +169,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/a1.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/b8.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
@@ -275,10 +277,10 @@ label {
 .products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top:3.67em;
-	margin-left:26vw;
+	margin-top:6em;
+	margin-left:1vw;
 	margin-bottom: 8em;
-	width:66vw;
+	width:98vw;
 	background-color:none;
 	
 }
@@ -293,6 +295,7 @@ label {
 
 .product-image img {
 	width: 100%;
+  box-shadow: 5px 5px 8px none;
 }
 
 .product-info {
@@ -314,16 +317,6 @@ label {
 	flex: 2 30%;
 	}
 
-	.products {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 8em;
-	margin-left:2vw;
-	margin-bottom:8em;
-	width:96vw;
-	background-color:none;
-	}
-
 	.overlay {
         position: absolute;
         top: 0;
@@ -334,10 +327,10 @@ label {
       }
 
     .modal {
-        width: 28vw;
+        width: 42vw;
         position: fixed;
         top: 30%;
-        left: 36%;
+        left: 29%;
         text-align: center;
         z-index: 11;
       }
@@ -384,10 +377,11 @@ label {
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 3.67em;
+	margin-top: 2.34em;
 	margin-left:23.67vw;
 	width:75.34vw;
 	flex: 1 36%;
+  background-color: none;
 	}
 
 	.product-info {
@@ -415,7 +409,7 @@ label {
         z-index: 10;
       }
       .modal {
-        width: 24.34vw;
+        width: 36vw;
         position: fixed;
         top: 30%;
         left: 49.2%;
@@ -472,10 +466,11 @@ label {
 	.products {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 8em;
+	margin-top: 6em;
 	margin-left: 1vw;
 	width:98vw;
 	flex: 1 36%;
+  background-color:none;
 	}	
 
   .header a {
@@ -549,7 +544,6 @@ form.example::after {
 .Sidebar {
   background:none; opacity: 100%;
   position: fixed;
-  top: 4.34em;
   bottom: 0;
   left: 0;
   z-index: 0;
@@ -599,8 +593,7 @@ form.example::after {
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 1.2em;
-        }
+    padding: 1.2em;}
       }
     }
 
@@ -612,22 +605,16 @@ form.example::after {
   border: none;
   outline: 0px solid transparent;
   padding-left:0em;
-  background:none;
   text-decoration: black;
 }
 
 
-@media (min-width: 48em){
-  }
-
 @media (max-width: 64em) {
   .Sidebar {
   position: fixed;
-  background:none;
-  top: 4.34em;
+  top: 3.6em;
   bottom: 0;
   left: 0;
-  background:none;
   opacity: 100%;
   z-index: 0;
   margin-left: 2.34vw;
@@ -652,23 +639,31 @@ form.example::after {
   
    @media (max-width: 48em) {
      .Hamburger {
-  margin-left: 2.34vw;
-}
+      margin-left: 2.34vw;}
      
      .Sidebar {
       background:yellow;
       margin-left:-.0em;
-      margin-top: .44em;
       padding-left:.34em;
-      padding-top: .67em;
+      padding-top: .5em;
       padding-bottom: .34em;
       padding-right: .34em;
-      height: 11.67em;
+      height: 12.67em;
       width: 7em;
         }
-
-        
       }
+ @media (min-width: 64em) {
+    .products {
+	      margin-top: 2.6em;}	
+    .Sidebar {
+        position: fixed;
+        top: 3.6em;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        margin-left: 7.34vw;
+        width: 6em;}
+  }
 
   #nav{
   display:none;

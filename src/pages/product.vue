@@ -7,9 +7,11 @@
             <g-link to="/esoteric">esoteric</g-link><br>
             <g-link to="/pop">pop music</g-link><br>
             <g-link to="/reggae">reggae</g-link><br>
-            <br>
+             <br>
             <g-link to="/faq">Faq</g-link><br>
             <g-link to="/contact">contact</g-link><br>
+            <br>
+            <g-link to="/cart">Cart (0)</g-link><br>
             <form class="example" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search" >
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -34,20 +36,20 @@
       
     <div style="text-align:right;">
         <h12 class style="font-family:Tonii; font-size:1.34em;">€129.00</h12><br>
-          <g-link to="/" style="font-family:Tonii; font-size:1.34em;">Order</g-link><br>
+          <g-link to="/cart" style="font-family:Tonii; font-size:1.34em;">Add to cart</g-link><br>
              <section id="accordion" style="margin-top:.34em;">
 			<div>
 				<input type="checkbox" id="check-3" />
 				<label for="check-3" style="font-size:1em; padding-bottom:0.34em;">Shipping</label>
 				<article>
-					<p style="font-size:.8em; line-height:1em;">Payments can be made either by Paypal or, in the case of Swedish residents, Swish.</p>
+					<p style="font-size:.8em; line-height:1em; background-color:pink; padding:.67em;">Payments can be made either by Paypal or, in the case of Swedish residents, Swish.</p>
 				</article>
 			</div>
 			<div>
 				<input type="checkbox" id="check-4" />
 				<label for="check-4" style="padding-bottom:0.34em; font-size:1em;">Conditions</label>
 				<article>
-					<p style="font-size:.8em; line-height:1em;">In your paypal payment, a tracking number will be added and can be searched <mark><g-link to="https://www.postnord.se/en/our-tools/track-and-trace2">right here.</g-link></mark>PostNord delivers within 5 working days in the EU and somewhere around 6-8 in North america and Asia.</p>
+					<p style="font-size:.8em; line-height:1em; background-color:pink; padding:.67em;">In your paypal payment, a tracking number will be added and can be searched <mark><g-link to="https://www.postnord.se/en/our-tools/track-and-trace2">right here.</g-link></mark>PostNord delivers within 5 working days in the EU and somewhere around 6-8 in North america and Asia.</p>
 				</article>
 			</div>
 		</section>
@@ -94,6 +96,24 @@
         </div>
       </div>
     </div>
+
+<div class="row3">
+  <h5 style="margin-bottom:.34em;">Also very nice..</h5>
+  <div class="column left3">
+    <g-image src="~/static/Images/hrb17.jpg"/>
+    <p style="margin-top:.34em;">"Böhöbé Spirits Music" LP</p>
+  </div>
+  <div class="column middle3">
+    <g-image src="~/static/Images/hrb18.jpg"/>
+    <p style="margin-top:.34em;">Broken ally 7"</p>
+  </div>
+  <div class="column right3">
+    <g-image src="~/static/Images/hrb12.jpg"/>
+    <p style="margin-top:.34em;">"Ich träume so leise von dir" LP</p>
+  </div>
+</div>
+
+
   </Layout>
 </template>
 
@@ -146,7 +166,7 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 4.34em;
+  margin-top: 2.34em;
   margin-left: 26vw;
   margin-bottom: 0em;
   background-color:none;
@@ -165,96 +185,135 @@ p {
 
 @media (max-width: 33em) {
   .container {
-    margin-bottom:0em;
-    padding-top: 3.67em;
-    background:none;
-    }
-
+  margin-bottom:0em;
+  padding-top: 3.67em;
+  background:none;}
  
   .item {
   margin-bottom: 0em;
   text-align: left;
-  background:none;
-  }
+  background:none;}
   
-table {
+  table {
   border-collapse: collapse;
   width: 92vw;
   background-color:none;
-  margin-top:-27.34em;
-}
+  margin-top:-27.34em;}
 
 .left {
-    opacity: 66%;
-  }
+    opacity: 66%;}
 
 .left, .right{
-  display: contents;
-}
+  display: contents;}
+
 .item1, .item2{
-  order: 1;
-}
+  order: 1;}
+
 .item4, .item6{
-  order: 2;
-}
+  order: 2;}
+
 .item5, .item3{
-  order: 3;
+  order: 3;}
+
+.column {
+  float: left;
+  height: 47vw;
 }
-}
+
+.row3 {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom:2em;
+  }
+
+.right3 {
+  width: 47vw;
+  text-align: right;}
+
+.middle3 {
+  width:0vw;
+  text-align: right;}
+
+.left3 {
+  width: 47vw;
+  text-align: right;
+  margin-right:2vw;}
+  
+  }
+
 @media (max-width: 48em) {
   .container {
-    margin-left:1.8vw;
+    margin-left:2vw;
     margin-right:2vw;
     margin-bottom:3.67em;
     padding-top: 3.67em;
-    width: 96vw;
-    background-color:none;
-    }
-}
+    width: 96vw;}
+
 
 .item {
   margin-bottom: 0em;
   text-align: left;
-  background:none;
-  }
+  background:none;}
 
 .item1 {
-  padding-bottom: 1em;
-}
+  padding-bottom: 1em;}
+
+.item6 {
+  margin-right:0em;}
 
 .left {
-  opacity: 100%;
-  }
+  opacity: 100%;}
 
 .left, .right{
-  display: contents;
-}
+  display: contents;}
+
 .item1, .item2{
-  order: 1;
-}
+  order: 1;}
 .item4, .item6{
-  order: 2;
-}
+  order: 2;}
 .item5, .item3{
-  order: 3;
+  order: 3;}
+
+.column {
+  float: left;
+  height: 4em;}
+
+.row3 {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom:5em;
+  padding:0em;
+  background-color:none;
+  height: 56vw;}
+
+.right3 {
+  width: 47vw;
+  text-align: right;}
+
+  .middle3 {
+  text-align: right;
+  width:0vw;
 }
 
+.left3 {
+  text-align: right;
+  width: 47vw;
+  margin-right:2vw;}
+}
    
 @media (min-width: 48em){
   .left, .right{
     display: inline-block;
-    vertical-align: top;
-  }
+    vertical-align: top;}
   
   .container{
     display: block;
     margin-left: 23vw;
     background-color: none;
-    margin-top: 3.67em;
-    margin-left: 12em;
-    margin-bottom: 3.67em;
-     width: 77vw;
-  }
+    margin-top: 2.34em;
+    margin-bottom: .67em;
+    height: 50em;
+    background-color:yellow;}
 
 table {
   border-collapse: collapse;
@@ -263,24 +322,73 @@ table {
   margin-top:-33em;
   margin-bottom:3.67em;
   margin-left: 12.08em;
-  font-size:1em;
-}
+  font-size:1em;}
 
   .left{
-    width: 44%;
+    width: 58%;
     margin-right: 2vw;
     max-width: 42vw;}
 
  .item1 {
-  padding-bottom: 0em;
-}
+  padding-bottom: 0em;}
+
+.item6 {
+  background-color:lime;}
 
   .right{
-    width: 48%;
-  } 
+    width: 40%;
+    background-color: red;} 
+  
+  .column {
+  float: left;
+  height: 36vw;
+}
+
+.row3 {
+  margin-left:23vw;
+  margin-bottom:5em;
+  background-color:none;}
+
+.right3 {
+  width: 23.6vw;
+  text-align: right;}
+
+  .middle3 {
+  width: 23.6vw;
+  text-align: right;
+  margin-right:2vw;
+}
+
+.left3 {
+  width: 23.6vw;
+  text-align: right;
+  margin-right:2vw}
 }
 
 @media (min-width: 64em){
+    .column {
+  float: left;
+  height: 21em;
+}
+
+.row3 {
+  margin-left:24.67vw;
+  margin-bottom:30vw;
+  background-color:none;}
+
+.right3 {
+  width: 23vw;
+  text-align: right;}
+
+  .middle3 {
+  width: 23vw;
+  margin-right:2vw;
+}
+
+.left3 {
+  width: 23vw;
+  margin-right:2vw}
+
   .left, .right{
     display: inline-block;
     vertical-align: top;
@@ -289,6 +397,9 @@ table {
   .container{
     display: block;
     margin-left: 24.67vw;
+    background-color: none;
+    margin-top: 2.34em;
+    height: 40em;
   }
 
 table {
@@ -300,24 +411,22 @@ table {
 }
 
   .left{
-    width: 60%;
+    width: 40%;
     margin-right: 2vw;
     max-width: 450px;}
   
   .right{
-    width: 35%;
-    background-color: none;
-  } 
+    width: 50%;
+    background-color: none;} 
 }
 .item2 {
   font-size: 1.67em;
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em;}
+
 .item3 {
   margin-top:1.34em;
   font-size: 1.34em;
-  line-height: 1em;  
-}
+  line-height: 1em;}
 
 .btn{
    font-size: 1.34em;
@@ -329,23 +438,18 @@ table {
 
  .Sidebar1 {
   line-height: 1em;
-  padding:.67em;
-      
-        }
+  padding:.67em;}
       
 
  .Sidebar1 {
     transform: translate3d(-200%, 0, 0);
-    top: 3em;
-    
-  }
+    top: 3em;}
  
   .Sidebar1.open {
     transform: translate3d(0, 0, 0);
-     .left, .right{
+    .left, .right{
     display: inline-block;
-    vertical-align: top;
-  }
+    vertical-align: top;}
   }
 
   .btn{
@@ -353,15 +457,13 @@ table {
    line-height: 1.5em;
    cursor:pointer;
    display:inline-block;
-   text-align: right;
-   }
+   text-align: right;}
 
-   #accordion input {
-	display: none;
-}
+  #accordion input {
+	display: none;}
+
 #accordion label {
 	background:white;
-	
 	cursor: pointer;
 	display: block;
 	margin-bottom: .0;
@@ -369,23 +471,22 @@ table {
 	z-index: 20;
   font-size: 1.5em;
   line-height: 1em;
-  background:none;
-}
+  background:none;}
+
 #accordion label:hover {
 }
 
 #accordion input:checked + label {
 	background:none;
-	font-size: 1.2
-5em;
-	margin-bottom: 0;
-}
+	font-size: 1.25em;
+	margin-bottom: 0;}
+
 #accordion article {
 	background: none;
 	height:0px;
 	overflow:hidden;
-	z-index:10;
-}
+	z-index:10;}
+
 #accordion article p {
 	padding: .67em 0em;
 }
@@ -393,7 +494,49 @@ table {
 }
 #accordion input:checked ~ article {
 	height: auto;
-	margin-bottom: .125em;
-}
+	margin-bottom: .125em;}
+
+  @media (max-width: 48em) {
+     .Sidebar {
+      background:yellow;
+      margin-left:-.0em;
+      padding-left:.34em;
+      padding-top: .5em;
+      padding-bottom: .34em;
+      padding-right: .34em;
+      height: 12.67em;
+      width: 7em;
+      top:3.15em;}
+      }
+
+
+ @media (min-width: 48em) {
+     .Sidebar {
+      position: fixed;
+      background:none;
+      top: 3.56em;
+      bottom: 0;
+      left: 0;
+      background:none;
+      opacity: 100%;
+      z-index: 0;
+      width: 6em;
+        }
+      }
+
+  @media (min-width: 64em) {
+     .Sidebar {
+      position: fixed;
+      background:none;
+      top: 3.56em;
+      bottom: 0;
+      left: 0;
+      background:none;
+      opacity: 100%;
+      z-index: 0;
+      width: 6em;
+      margin-left:7.34vw;
+        }
+      }
 
 </style>

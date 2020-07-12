@@ -7,9 +7,11 @@
             <g-link to="/esoteric">esoteric</g-link><br>
             <g-link to="/pop">pop music</g-link><br>
             <g-link to="/reggae">reggae</g-link><br>
-            <br>
+             <br>
             <g-link to="/faq">Faq</g-link><br>
             <g-link to="/contact">contact</g-link><br>
+            <br>
+            <g-link to="/cart">Cart (0)</g-link><br>
             <form class="example" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search" >
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -67,7 +69,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding-top: 3.67em;
+  padding-top: 0em;
   margin-left: 26vw;
   margin-right: 2em;
   margin-bottom: 4em;
@@ -85,7 +87,7 @@
 @media (max-width: 33em) {
   .container {
     margin-bottom:8em;
-    padding-top: 3.em;
+    padding-top: 2.34em;
     background:none;
     }
 
@@ -124,6 +126,7 @@
     margin-top: 4.34em;
     width: 96vw;
     background-color:none;
+    padding-top: 1.67em;
     }
   }
 
@@ -162,12 +165,13 @@
     display: block;
     background-color: none;
     margin-left: 12em;
-    width: 81vw;
+    width: 96vw;
+    margin-top: 2.34em;
     
     }
 
   .left{
-    width: 42%;
+    width: 30%;
     margin-right: 2.67vw;
     }
 
@@ -181,7 +185,7 @@
     }
 
   .right{
-    width: 45%;
+    width: 40vw;
     background-color: none;
     } 
 }
@@ -196,11 +200,11 @@
     display: block;
     margin-left: 24.67vw;
     margin-right: 2.67vw;
-    width: 79vw;
+    width: 96vw;
     }
 
   .left{
-    width: 42%;
+    width: 58%;
     margin-right: 2vw;
     max-width: 36vw;
     }
@@ -215,7 +219,7 @@
     }
 
   .right{
-    width: 48%;
+    width: 38%;
     background-color: none;
     } 
   }
@@ -248,4 +252,48 @@ mark {
     z-index: -3;
 }
 
+  @media (max-width: 48em) {
+     .Sidebar {
+      background:yellow;
+      margin-left:-.0em;
+      padding-left:.34em;
+      padding-top: .5em;
+      padding-bottom: .34em;
+      padding-right: .34em;
+      height: 12.67em;
+      width: 7em;
+      top: 3.15em;
+        }
+      }
+
+ @media (min-width: 48em) {
+     .Sidebar {
+      position: fixed;
+      background:none;
+      top: 3.56em;
+      bottom: 0;
+      left: 0;
+      background:none;
+      opacity: 100%;
+      z-index: 0;
+      width: 6em;
+        }
+      }
+
+  @media (min-width: 64em) {
+     .Sidebar {
+      position: fixed;
+      background:none;
+      top: 3.56em;
+      bottom: 0;
+      left: 0;
+      background:none;
+      opacity: 100%;
+      z-index: 0;
+      width: 6em;
+      margin-left:7.34vw;
+        }
+      }
+
+  
 </style>

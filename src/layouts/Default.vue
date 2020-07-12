@@ -12,8 +12,7 @@
     
     <slot/>
     <div class="footer">
-    <div class="marquee">
-        <p></p>
+    <footer style="background-color:whitesmoke;">Instagram&nbsp;&nbsp;&nbsp;<g-link to="/contact">soundcloud&nbsp;&nbsp;&nbsp;</g-link>newsletter&nbsp;&nbsp;&nbsp;copyright 2020</footer>
     </div></footer></div>
   </div>
 </template>
@@ -45,46 +44,54 @@ a:hover {
 body {
   font-family: "Elmo";
   margin:0;
-  line-height: 1.;
+  line-height: 1;
+  font-weight: bold;
   width: 100%;
   }
 
 .h1 {
   font-family: "medi";
   font-size:  2em;
+  font-weight: bold;
   }
 
 .h12 {
   font-family: "tonii";
   font-size:  1em;
+  font-weight: bold;
   }
 
 .p {
   font-family: "elmo";
   font-size: calc(16px + 1vw);
   line-height: calc(1.1em + 0.5vw);
+  font-weight: bold;
   }
   
 h2 {
   font-family: "elmo";
   font-size: 1.5em;
+  font-weight: bold;
   }
 
 h3 {
   font-family: "elmo";
   text-align: right;
   font-size: 1.5em;
+  font-weight: bold;
   }
 
 h4 {
   text-align: right;
   font-family: "elmo";
   font-size: 1.25em;
+  font-weight: bold;
   }
 
 h5 {
   font-family: "elmo";
   font-size: 1.25em;
+  font-weight: bold;
   }
 
 .logo {
@@ -92,6 +99,7 @@ h5 {
   font-size:  2em;
   letter-spacing: -0.03em;
   text-shadow: 3px 5px 3px white;
+  z-index: 4;
   }
 .layout {
   width: 100%;
@@ -120,7 +128,7 @@ h5 {
   color: none;
   text-align: center;
   text-decoration: none;
-  margin-left: 3.95vw;
+  margin-left: 3.67vw;
   }
 
 .sticky {
@@ -183,7 +191,7 @@ h5 {
 
   .header a {
     background-color: none;
-    margin-left: .86vw;
+    margin-left: 1.1725vw;
     float: left;
     }
 
@@ -203,7 +211,7 @@ h5 {
     display: block;
     align-items: center;
     background-color:none;
-    margin-right: .5em;
+    margin-right: .2em;
     margin-top:0em;
     }
 
@@ -227,7 +235,7 @@ h5 {
 
 @media screen and (max-width: 33em) {
   .container {
-    background: red;
+    background: none;
     }
 
 .item {
@@ -355,7 +363,6 @@ form.example::after {
   float: right;
   display: block;
   text-align: right;
-  margin-right: 1.67vw;
   position: relative;
   left: 0;
   top: 0;
@@ -618,5 +625,30 @@ p {
 
         
       }
-
+@media (min-width: 64em) {
+         footer{
+      padding:.67em;
+      padding-left:7.34vw;
+      border-top: .1725em solid black;
+        }
+      }
+    
+     @media (min-width: 48em) {
+      footer{
+      padding:.67em;
+      padding-left:2.34vw;
+      border-top: .1725em solid black;
+       }
+      }
+    
+    @media (max-width: 48em) {
+      footer{
+      padding:.67em;
+      padding-right:3vw;
+      border-top: .1725em solid black;
+      font-size:2.67vw;
+      text-align:right;
+      }
+    
+        }
 </style>

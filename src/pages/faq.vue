@@ -1,15 +1,17 @@
 <template>
   <Layout>
-         <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%; line-height:1em;">
+          <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%; line-height:1em;">
         <g-link to="/newstuff">New stuff</g-link><br>
             <g-link to="/afro">afro</g-link><br>
             <g-link to="/boogie">boogie</g-link><br>
             <g-link to="/esoteric">esoteric</g-link><br>
             <g-link to="/pop">pop music</g-link><br>
             <g-link to="/reggae">reggae</g-link><br>
-            <br>
-            <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link to="/faq">Faq</g-link></mark><br>
-            <g-link to="/contact">contact</g-link><br>
+             <br>
+             <mark style="padding:.1725em; mix-blend-mode: darken;"><g-link>Faq</g-link></mark><br>
+             <g-link to="/contact">contact</g-link><br>
+             <br>
+            <g-link to="/cart">Cart (2)</g-link><br>
             <form class="example" action="/action_page.php" autocomplete="off">
   <input type="text" placeholder="search" name="search" >
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -30,7 +32,7 @@
   <div class="container">
   <div class="left">
     <div class="item item1">
-      <h5 style="background-color:yellow; padding:.67em;line-height:1em;">Welcome to the Frequently asked questions page. Here are the answers to them. In the chance that you have a question that is not frequently asked, please <g-link to="/contact">gimme a holler over here.</g-link><br></h5>
+      <h5 style="background-color:whitesmoke; padding:.67em;line-height:1em;">Welcome to the Frequently asked questions page. Here are the answers to them. In the chance that you have a question that is not frequently asked, please <mark><g-link to="/contact">gimme a holler over here.</g-link></mark><br></h5>
 </div>
       
 </div><div class="right">
@@ -188,7 +190,7 @@ p {
     margin-left:2vw;
     margin-right:2vw;
     margin-bottom:8em;
-    margin-top: 5.9em;
+    margin-top: 4em;
     width: 95.67vw;
     background-color:none;
     }
@@ -235,24 +237,69 @@ background-color: none;
   
   .container{
     display: block;
-    width: 78vw;
     margin-left: 23vw;
     background-color: none;
-    margin-top: 1.67em;
+    margin-top: .34em;
     margin-left: 12em;
-    width: 75vw;
+    margin-right:2vw;
   }
+
   .left{
-    width: 60%;
+    width: 52%;
     margin-right: 1em;
     padding-top: 0em;
     }
 
   .right{
-    width: 36%;
-    margin-top: 2em;
-  } 
+    width: 45%;
+    margin-top: 2em;}
+
+     #accordion input {
+	display: none;
 }
+#accordion label {
+	background:white;
+	
+	cursor: pointer;
+	display: block;
+	margin-bottom: .0;
+	padding: .1725em 0em;
+	z-index: 20;
+  font-size: 1.34em;
+  line-height: 1em;
+  background:none;
+  text-align: right;
+}
+#accordion label:hover {
+}
+
+#accordion input:checked + label {
+	background:none;
+	font-size: 1.34em;
+	margin-bottom: 0;
+  text-align: right;
+}
+#accordion article {
+	background: none;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+  text-align: right;
+}
+#accordion article p {
+	padding: 1em;
+  text-align: right;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	height: auto;
+	margin-bottom: .125em;
+  text-align: right;
+}
+
+}
+
 
 @media (min-width: 64em){
   .left, .right{
@@ -263,16 +310,16 @@ background-color: none;
   .container{
     display: block;
     margin-left: 24.67vw;
-    width: 67vw;
+    margin-right:2vw;
   }
   .left{
-     width: 50%;
-    margin-right: 1em;}
+     width: 45%;
+    margin-right: 2vw;}
   
   .right{
-    width: 46%;
-    margin-right: em;
-  } 
+    width: 49%;
+    margin-right: 2vw;}
+     
 }
 .item2 {
   margin-bottom: 1.5em;
@@ -301,37 +348,86 @@ background-color: none;
 	margin-bottom: .0;
 	padding: .1725em 0em;
 	z-index: 20;
-  font-size: 1.5em;
+  font-size: 1.34em;
   line-height: 1em;
   background:none;
+  text-align: left;
 }
 #accordion label:hover {
 }
 
 #accordion input:checked + label {
 	background:none;
-	font-size: 1.2
-5em;
+	font-size: 1.34em;
 	margin-bottom: 0;
+  text-align: left;
 }
 #accordion article {
 	background: none;
 	height:0px;
 	overflow:hidden;
 	z-index:10;
+  text-align: left;
 }
 #accordion article p {
 	padding: 1em;
+  text-align: left;
 }
 #accordion input:checked article {
 }
 #accordion input:checked ~ article {
 	height: auto;
 	margin-bottom: .125em;
+  text-align: left;
 }
 
 mark {
   background-color: yellow;
   color: black;
   }
+
+    @media (max-width: 48em) {
+     .Sidebar {
+      background:yellow;
+      margin-left:-.0em;
+      padding-left:.34em;
+      padding-top: .5em;
+      padding-bottom: .34em;
+      padding-right: .34em;
+      height: 12.67em;
+      width: 7em;
+      top:3.2em;
+        }
+      }
+
+ @media (min-width: 48em) {
+     .Sidebar {
+      position: fixed;
+      background:none;
+      top: 3.56em;
+      bottom: 0;
+      left: 0;
+      background:none;
+      opacity: 100%;
+      z-index: 0;
+      width: 6em;
+        }
+      }
+
+  @media (min-width: 64em) {
+     .Sidebar {
+      position: fixed;
+      background:none;
+      top: 3.56em;
+      bottom: 0;
+      left: 0;
+      background:none;
+      opacity: 100%;
+      z-index: 0;
+      width: 6em;
+      margin-left:7.34vw;
+        }
+      }
+
+  
 </style>
