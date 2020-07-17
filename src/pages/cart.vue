@@ -138,8 +138,8 @@
   </div>
    <div class="row2" style="margin-bottom:8em;">
 
-    <div class="col-25" style="text-align:right; font-size:1.5em; margin-top:0em;" >
-      <input type="submit" value="Checkout">
+    <div class="col-25" style="text-align:right; font-size:1.5em; margin-top:0em; padding-bottom:2em; background-color:whitesmoke;" >
+      <input type="submit" style="background-color:whitesmoke;" value="Checkout">
     </div></div>
   
   </form>
@@ -337,6 +337,7 @@ input[type=submit]:hover {
   padding:0em;
   font-size: 1.25em;
   font-weight: bold;
+  background-color: whitesmoke;
   }
 
 .col-75 {
@@ -489,8 +490,8 @@ hi {
   margin-right:2vw;}
   
 h3 {
-  margin-top:1.3em;
-  margin-left:25vw;
+  margin-top:1.8em;
+  margin-left:24.67vw;
   margin-right:2vw;
   background-color: whitesmoke;
   padding:.67vw;
@@ -634,6 +635,7 @@ h3 {
   color: black;
   font-size: 1.25em;
   font-weight: bold;
+  background-color: whitesmoke;
   margin: 0em;
   padding:0em;}
 

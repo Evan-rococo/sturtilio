@@ -70,8 +70,8 @@
     </div>
   </div>
    <div class="row2" style="margin-bottom:8em;">
-    <div class="col-25" style="text-align:right; font-size:1.5em; margin-top:0em;" >
-      <input type="submit" value="Checkout">
+    <div class="col-25" style="text-align:right; font-size:1.5em; margin-top:0em;padding-bottom:2em;" >
+      <input type="submit" style="background-color:whitesmoke;" value="Submit">
     </div></div>
   
   </form>
@@ -104,7 +104,7 @@
 
 @media (max-width: 33em) {
   .container {
-    background: red;
+    background:none;
     }
 
     .row {
@@ -120,6 +120,7 @@
     margin-bottom:8em;
     margin-top: 0em;
     width: 75.67vw;
+     background-color:none;
     }
 
 .col-25 {
@@ -134,10 +135,10 @@
   color: black;
   margin: 0em;
   padding:0em;
+  background-color:none;
   }
 
 .row {
-  background-color: none;
   margin-right:4vw;
 }
 }
@@ -170,6 +171,8 @@ margin-right:4vw;
   .col-75 {
   text-align: right;
   color: black;
+  font-size: 1.34em;
+  font-weight: bold;
   }
 }
 
@@ -280,20 +283,20 @@ input[type=submit]:hover {
   width: 100%;}
 
 .row2 {
-  padding-top:.67em;
+  padding-top: .67em;
   padding-right: .67em;
-  margin-left: calc(8.8em + 9vw);
+  margin-left: 2vw;
   margin-right: 2vw;
+  opacity: 100%;
   background-color:whitesmoke;}
 
  .col-25 {
   text-align: right;
   color: black;
-  margin: 0em;
-  padding:0em;
   font-size: 1.25em;
   font-weight: bold;
-  }
+  margin: 0em;
+  padding:0em;}
 
 .col-75 {
   text-align: right;
@@ -301,8 +304,7 @@ input[type=submit]:hover {
   margin: 0em;
   padding:0em;
   font-size: 1.25em;
-  font-weight: bold;
-  }
+   background-color:none;}
 
 .left2 {
 width: calc(8em + 5vw);
@@ -310,6 +312,8 @@ width: calc(8em + 5vw);
 h3 {
   margin-top: 4.8em;
   font-size:1.25em;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-color: whitesmoke;
   padding:2vw;
 }
@@ -344,8 +348,8 @@ h3 {
   background-color:whitesmoke;}
   
 h3 {
-  margin-top:1.3em;
-  margin-left:25vw;
+  margin-top:1.5em;
+  margin-left:24.67vw;
   margin-right:2vw;
   background-color: whitesmoke;
   padding-top:.67em;
@@ -381,7 +385,7 @@ h3 {
 
 
 h3 {
-  margin-top:1.3em;
+  margin-top:1.5em;
   margin-left:25vw;
   margin-right:2vw;
   background-color: whitesmoke;
@@ -411,8 +415,8 @@ h3 {
 .row2 {
   padding-top: .67em;
   padding-right: .67em;
-  margin-left: 3.67vw;
-  margin-right:3.67vw;}
+  margin-left: 2vw;
+  margin-right:2vw;}
 
  .col-25 {
   text-align: right;
@@ -427,12 +431,15 @@ h3 {
   color: black;
   margin: 0em;
   padding:0em;
-  font-size: 1.25em;}       
+  font-size: 1.25em;
+   background-color:none;}       
 
 
 h3 {
   margin-top: 4.8em;
   font-size:1.25em;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-color: whitesmoke;
   padding:2vw;}
         }

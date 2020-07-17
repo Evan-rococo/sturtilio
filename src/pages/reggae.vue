@@ -1,7 +1,7 @@
 <template>
 <body>
 	  <div class="overlay"></div>
-    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src=""/></div>
+   <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/d64.png"/></div>
   <Layout>
 	     <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
         <g-link to="/newstuff">New stuff</g-link><br>
@@ -327,10 +327,10 @@ label {
       }
 
     .modal {
-        width: 42vw;
+        width: 28vw;
         position: fixed;
         top: 30%;
-        left: 29%;
+        left: 36%;
         text-align: center;
         z-index: 11;
       }
@@ -400,7 +400,7 @@ label {
 		align-self: flex-start;
 	}
 
-	 .overlay {
+ .overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -409,7 +409,7 @@ label {
         z-index: 10;
       }
       .modal {
-        width: 36vw;
+        width: 24.34vw;
         position: fixed;
         top: 30%;
         left: 49.2%;

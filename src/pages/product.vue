@@ -135,7 +135,6 @@
 
 table, td, th {
   border: 0px solid black;
-  background-color:;
 }
 
 table {
@@ -308,11 +307,11 @@ p {
   
   .container{
     display: block;
-    margin-left: 23vw;
+    margin-left: 24.67vw;
     background-color: none;
-    margin-top: 2.34em;
+    margin-top: 2.3em;
     margin-bottom: .67em;
-    height: 50em;
+    height: 36em;
     background-color:yellow;}
 
 table {
@@ -325,8 +324,8 @@ table {
   font-size:1em;}
 
   .left{
-    width: 58%;
-    margin-right: 2vw;
+    width: 43%;
+    margin-right: 1.5vw;
     max-width: 42vw;}
 
  .item1 {
@@ -336,7 +335,7 @@ table {
   background-color:lime;}
 
   .right{
-    width: 40%;
+    width: 53%;
     background-color: red;} 
   
   .column {
@@ -400,6 +399,7 @@ table {
     background-color: none;
     margin-top: 2.34em;
     height: 40em;
+    width: 78vw;
   }
 
 table {
@@ -412,11 +412,11 @@ table {
 
   .left{
     width: 40%;
-    margin-right: 2vw;
+    margin-right: 1.67vw;
     max-width: 450px;}
   
   .right{
-    width: 50%;
+    width: 52%;
     background-color: none;} 
 }
 .item2 {
@@ -463,7 +463,7 @@ table {
 	display: none;}
 
 #accordion label {
-	background:white;
+	background:red;
 	cursor: pointer;
 	display: block;
 	margin-bottom: .0;

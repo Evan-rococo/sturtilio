@@ -27,26 +27,23 @@
   </i>
 </div>
   
-  <div class="container">
+  <div class="container"><h4 style="border-radius: px;">After the adoption of the euro, policy changed to linking currencies of EU countries outside the eurozone to the euro (having the common currency as a central point).<br><br>The goal was to improve the stability of those currencies, as well as to gain an evaluation mechanism for potential eurozone members. As of 2020, three currencies participate in ERM II: the Danish krone, the Croatian kuna and the Bulgarian lev.</h4>
   <div class="left">
     <div class="item item1" style="margin-bottom:.34em;">
       
       <g-link to="/product/">
     <g-image src="~/static/metal.gif"/>
     </g-link></div>
-    <div class="item item2"> <p style="margin-bottom:1.34em; font-size: 1em; text-align:right;transform: rotate(0deg)">Last updated: June 31, 2020 01:19am</p></div>
+    <div class="item item2"> <p style="margin-bottom:1.34em; font-size: 1em; text-align:right;transform: rotate(0deg)"></p></div>
   </div>
 
   <div class="right">
     <div class="item item4"> <p>Here it comes, the site is all fixed and online. The idea here is to keep pumping this place full of hot records to sell.<br><br>
     As of today, I would guess this should be as minimium viable product in 10 days or so. I need to get JS running so audio player works. I need to get instagram going too. Mailchimp, etc. So 10 days is about right.<br><br>
-    Right now, I'm mostly excited about the Elle et moi 12" from Belgian. I can't remember the artist name, but it's definitely high on my list and hasn't sold on discogs since the last copy i got in 2018. </p> <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/N07ow4LDWfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></div>
+    Right now, I'm mostly excited about the Elle et moi 12" from Belgian. I can't remember the artist name, but it's definitely high on my list and hasn't sold on discogs since the last copy i got in 2018. </p> 
+</div>
   </div>
 </div>
-	
-
   </Layout>
 </template>
 
@@ -123,7 +120,7 @@
   .container {
     margin-left:2vw;
     margin-bottom:4em;
-    margin-top: 4.34em;
+    margin-top: 2.86em;
     width: 96vw;
     background-color:none;
     padding-top: 1.67em;
@@ -137,8 +134,15 @@
   }
 
 .left {
-  opacity: 100%;
-  }
+  opacity: 100%;}
+
+h4 {
+  text-align: left;
+  margin-bottom: .67em;
+  font-size:1.25em;
+  background-color: red;
+  padding:2vw;
+}
   
 
 .left, .right{
@@ -164,14 +168,22 @@
   .container{
     display: block;
     background-color: none;
-    margin-left: 12em;
-    width: 96vw;
-    margin-top: 2.34em;
-    
-    }
+    margin-left:24.67vw;
+    width: 74vw;
+    margin-top: 2.34em;}
+
+  h4 {
+  text-align: left;
+  margin-right: 2.67vw;
+  margin-bottom: 2.67vw;
+  font-size:1.25em;
+  background-color: red;
+  padding:2vw;
+  
+}
 
   .left{
-    width: 30%;
+    width: 41%;
     margin-right: 2.67vw;
     }
 
@@ -185,7 +197,7 @@
     }
 
   .right{
-    width: 40vw;
+    width: 36vw;
     background-color: none;
     } 
 }
@@ -200,11 +212,21 @@
     display: block;
     margin-left: 24.67vw;
     margin-right: 2.67vw;
-    width: 96vw;
-    }
+    width: 96vw;}
+
+    h4 {
+  text-align: left;
+  margin-bottom: 2.67vw;
+  margin-right: 2.67vw;
+  margin-top: 3.15vw;
+  font-size:1.25em;
+  background-color: red;
+  padding:2vw;
+  width: 76%;
+}
 
   .left{
-    width: 58%;
+    width: 34%;
     margin-right: 2vw;
     max-width: 36vw;
     }
@@ -219,7 +241,7 @@
     }
 
   .right{
-    width: 38%;
+    width: 40%;
     background-color: none;
     } 
   }
@@ -262,7 +284,7 @@ mark {
       padding-right: .34em;
       height: 12.67em;
       width: 7em;
-      top: 3.15em;
+      top: 3.25em;
         }
       }
 

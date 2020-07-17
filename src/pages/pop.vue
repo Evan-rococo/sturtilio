@@ -1,7 +1,7 @@
 <template>
 <body>
 	  <div class="overlay"></div>
-    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/hj1.png"/></div>
+    <div class="modal" style="transform: rotate(-0deg); filter: blur(5vw); mix-blend-mode: exclusion; width:100%; z-index:0;"><g-image src="~/static/t16.gif"/></div>
   <Layout>
 	     <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
         <g-link to="/">New stuff</g-link><br>
@@ -47,8 +47,8 @@
 		</div>
 		
 		<div class="product-card">
-			<div class="product-image">
-			 <g-link to="/product/">
+			<div class="product-image" style="z-index:-8;">
+			 <g-link to="/product/" >
     <g-image src="~/static/Images/p4.png" width=450em; height="450em;"/>
     </g-link>
 			</div>
@@ -61,7 +61,7 @@
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/b11.jpg" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/hrb18.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 	<div class="product-info">
@@ -77,8 +77,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"I know you feel it" LP</h3>
-				<h3>Kumasi</h3>
+				<p>"I know you feel it" LP</p>
+				<p>Kumasi</p>
 			</div>
 		</div>
 		
@@ -89,20 +89,20 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>S/t LP</h3>
-				<h3>Puzzle</h3>
+				<p>S/t LP</p>
+				<p>Puzzle</p>
 			</div>
 		</div>
 
 		<div class="product-card">
 			<div class="product-image">
 			 <g-link to="/product/">
-    <g-image src="~/static/Images/p5.png" width=450em; height="450em;"/>
+    <g-image src="~/static/Images/hrb8.jpg" width=450em; height="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Broken ally 7"</h3>
-				<h3>Eddy alimante</h3>
+				<p>Broken ally 7"</p>
+				<p>Eddy alimante</p>
 			</div>
 		</div>
 		
@@ -113,8 +113,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Tender lover 7"</h3>
-				<h3>Eddy amiante</h3>
+				<p>Tender lover 7"</p>
+				<p>Eddy amiante</p>
 			</div>
 		</div>
 		
@@ -125,8 +125,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>My name is bond 12"</h3>
-				<h3>Beat control</h3>
+				<p>My name is bond 12"</p>
+				<p>Beat control</p>
 			</div>
 		</div>
 		
@@ -137,8 +137,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Feeling Nice 12"</h3>
-				<h3>Jam-master king</h3>
+				<p>Feeling Nice 12"</p>
+				<p>Jam-master king</p>
 			</div>
 		</div>
 		
@@ -149,20 +149,20 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Jazz maiden" EP</h3>
-				<h3>Accura</h3>
+				<p>"Jazz maiden" EP</p>
+				<p>Accura</p>
 			</div>
 		</div>
 		
 		<div class="product-card">
 			<div class="product-image">
 				 <g-link to="/product/">
-    <g-image src="~/static/Images/p1.png" width="450em;"/>
+    <g-image src="~/static/Images/s4.jpg" width="450em;"/>
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Böhöbé Spirits Music" LP</h3>
-				<h3>Norberto de nöah</h3>
+				<p>"Böhöbé Spirits Music" LP</p>
+				<p>Norberto de nöah</p>
 			</div>
 		</div>
 		
@@ -173,8 +173,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Tennesse stud 12"</h3>
-				<h3>Never was a horse like a</h3>
+				<p>Tennesse stud 12"</p>
+				<p>Never was a horse like a</p>
 			</div>
 		</div>
 		
@@ -326,12 +326,12 @@ label {
       }
 
     .modal {
-        width: 28vw;
+        width: 100vw;
+        height: 100vw;
         position: fixed;
-        top: 30%;
-        left: 36%;
         text-align: center;
         z-index: 11;
+        margin-left:0vw;
       }
 
 	.header a {
@@ -408,10 +408,12 @@ label {
         z-index: 10;
       }
       .modal {
-        width: 24.34vw;
+        width: 120em;
+        height: 100vw;
         position: fixed;
-        top: 30%;
-        left: 49.2%;
+        margin-top: -3em;
+        margin-left: 25vw;
+        background-size: auto;
         text-align: center;
         z-index: 11;
       }
@@ -439,6 +441,13 @@ label {
   }}
 
 @media screen and (max-width: 64em) {
+   .modal {
+        width: 100vw;
+        height: 100vw;
+        position: fixed;
+        text-align: center;
+        z-index: 11;
+      }
 
   .header a {
     background-color: none;

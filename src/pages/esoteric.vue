@@ -1,7 +1,7 @@
 <template>
 <body>
 	  <div class="overlay"></div>
-    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/gao.png"/></div>
+    <div class="modal" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/d64.png"/></div>
   <Layout>
 	     <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
         <g-link to="/newstuff">New stuff</g-link><br>

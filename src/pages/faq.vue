@@ -239,7 +239,7 @@ background-color: none;
     display: block;
     margin-left: 23vw;
     background-color: none;
-    margin-top: .34em;
+    margin-top:.25em;
     margin-left: 12em;
     margin-right:2vw;
   }
@@ -319,7 +319,7 @@ background-color: none;
   .right{
     width: 49%;
     margin-right: 2vw;}
-     
+
 }
 .item2 {
   margin-bottom: 1.5em;
