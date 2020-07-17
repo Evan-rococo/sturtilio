@@ -352,8 +352,7 @@ h3 {
   margin-left:24.67vw;
   margin-right:2vw;
   background-color: whitesmoke;
-  padding-top:.67em;
-  padding-right: .67em;
+  padding: .67vw;
 }
 
       }

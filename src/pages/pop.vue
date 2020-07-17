@@ -1,6 +1,7 @@
 <template>
 <body>
 	  <div class="overlay"></div>
+    <div class="modal1" style="transform: rotate(-9deg); mix-blend-mode: normal;"><g-image src="~/static/d64.png"/></div>
     <div class="modal" style="transform: rotate(-0deg); filter: blur(5vw); mix-blend-mode: exclusion; width:100%; z-index:0;"><g-image src="~/static/t16.gif"/></div>
   <Layout>
 	     <div class="Sidebar" v-bind:class="{ open: isActive}" style="opacity:100%;">
@@ -334,6 +335,15 @@ label {
         margin-left:0vw;
       }
 
+      .modal1 {
+        width: 28vw;
+        position: fixed;
+        top: 30%;
+        left: 36%;
+        text-align: center;
+        z-index: 11;
+      }
+
 	.header a {
     float: right;
     display: block;
@@ -414,6 +424,15 @@ label {
         margin-top: -3em;
         margin-left: 25vw;
         background-size: auto;
+        text-align: center;
+        z-index: 11;
+      }
+
+       .modal1 {
+        width: 24.34vw;
+        position: fixed;
+        top: 30%;
+        left: 49.2%;
         text-align: center;
         z-index: 11;
       }

@@ -349,17 +349,17 @@ table {
   background-color:none;}
 
 .right3 {
-  width: 23.6vw;
+  width: 23.8vw;
   text-align: right;}
 
   .middle3 {
-  width: 23.6vw;
+  width: 23.8vw;
   text-align: right;
   margin-right:2vw;
 }
 
 .left3 {
-  width: 23.6vw;
+  width: 23.8vw;
   text-align: right;
   margin-right:2vw}
 }
@@ -376,16 +376,16 @@ table {
   background-color:none;}
 
 .right3 {
-  width: 23vw;
+  width: 23.2vw;
   text-align: right;}
 
   .middle3 {
-  width: 23vw;
+  width: 23.2vw;
   margin-right:2vw;
 }
 
 .left3 {
-  width: 23vw;
+  width: 23.2vw;
   margin-right:2vw}
 
   .left, .right{

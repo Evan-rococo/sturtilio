@@ -77,8 +77,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"I know you feel it" LP</h3>
-				<h3>Kumasi</h3>
+				<p>"I know you feel it" LP</p>
+				<p>Kumasi</p>
 			</div>
 		</div>
 		
@@ -89,8 +89,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>S/t LP</h3>
-				<h3>Puzzle</h3>
+				<p>S/t LP</p>
+				<p>Puzzle</p>
 			</div>
 		</div>
 
@@ -101,8 +101,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Broken ally 7"</h3>
-				<h3>Eddy alimante</h3>
+				<p>Broken ally 7"</p>
+				<p>Eddy alimante</p>
 			</div>
 		</div>
 		
@@ -113,8 +113,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Tender lover 7"</h3>
-				<h3>Eddy amiante</h3>
+				<p>Tender lover 7"</p>
+				<p>Eddy amiante</p>
 			</div>
 		</div>
 		
@@ -125,8 +125,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>My name is bond 12"</h3>
-				<h3>Beat control</h3>
+				<p>My name is bond 12"</p>
+				<p>Beat control</p>
 			</div>
 		</div>
 		
@@ -137,8 +137,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Feeling Nice 12"</h3>
-				<h3>Jam-master king</h3>
+				<p>Feeling Nice 12"</p>
+				<p>Jam-master king</p>
 			</div>
 		</div>
 		
@@ -149,8 +149,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Jazz maiden" EP</h3>
-				<h3>Accura</h3>
+				<p>"Jazz maiden" EP</p>
+				<p>Accura</p>
 			</div>
 		</div>
 		
@@ -161,8 +161,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>"Böhöbé Spirits Music" LP</h3>
-				<h3>Norberto de nöah</h3>
+				<p>"Böhöbé Spirits Music" LP</p>
+				<p>Norberto de nöah</p>
 			</div>
 		</div>
 		
@@ -173,8 +173,8 @@
     </g-link>
 			</div>
 			<div class="product-info">
-				<h3>Tennesse stud 12"</h3>
-				<h3>Never was a horse like a</h3>
+				<p>Tennesse stud 12"</p>
+				<p>Never was a horse like a</p>
 			</div>
 		</div>
 		
